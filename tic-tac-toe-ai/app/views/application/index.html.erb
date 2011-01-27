@@ -1,0 +1,15 @@
+<div class="welcome_container">
+  <div class="welcome">
+    Hello!
+    
+    <div class="choose_turn">
+      Would you like to go first?
+  
+      <ul class="choose_options">
+        <li><%= link_to "Yes", { :controller => 'application', :action => 'start_game', :human_is_first => true  }, :remote => true  %></li>
+        <li><%= link_to "No", { :controller => 'application', :action => 'start_game', :human_is_first => true  }, :remote => false  %></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
