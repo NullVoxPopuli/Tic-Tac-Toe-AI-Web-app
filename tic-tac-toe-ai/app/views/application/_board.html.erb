@@ -1,0 +1,17 @@
+<div class="board_container" style="display: none">
+  <h1 class="site_title">Tic-Tac-Toe</h1>
+  <div class="board">
+    <% @board_state = @board.board_state %>
+    <% @board.width.times do |row| %>
+      <% @board.width.times do |col| %>
+        <%= link_to :controller => 'board', :action => 'take_turn' do %>
+          <div class="ttt_square"> 
+            &nbsp;
+          </div>
+          <% end %>
+      <% end %>
+      <br>
+    <% end %>
+  </div>
+  
+</div>

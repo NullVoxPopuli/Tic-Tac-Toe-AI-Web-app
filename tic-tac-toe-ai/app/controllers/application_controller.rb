@@ -6,7 +6,9 @@ class ApplicationController < ActionController::Base
     end
 
     def start_game
-      human_is_going_first = params[:human_is_first]
+      @human_is_going_first = params[:human_is_first]
+      @board = Board.new
+      @board.init
       
         if request.xhr?
             render 'start_game.js.erb', :layout => false

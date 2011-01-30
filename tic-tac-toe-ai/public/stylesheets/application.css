@@ -6,21 +6,47 @@ body{
 a{
   text-decoration: none;
 }
+.site_title{
+  padding: 0px;
+  margin: 0px;
+  font-weight: 100;
+}
+.browser_error{
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  width: 500px;
+  height: 100px;
+  margin: -50px 0 0 -250px;
+}
+
+/***************************************************/
+/*                 Welcome Stuff                   */
+/***************************************************/
 .welcome_container{
+  /* center vertically and horizontally */
+
+  position: absolute;
+  
+  top: 40%;
+  left: 50%;
+  width: 340px;
+  height: 160px;
+  margin: -80px 0 0 -175px;
+
 
 }
   .welcome{
+    display: block;
     background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#333));
+
     color: white;
     padding: 20px;
     
-    /* center vertically and horizontally */
-    position: absolute;
-    top: 50%;
-    left: 50%;
+
     height: 100px;
     width: 300px;
-    margin: -50px 0 0 -150px;
     
     /* left down size spread color */
     -moz-box-shadow: 0px 3px 5px 3px #555;
@@ -93,3 +119,61 @@ a{
       .choose_options li a:active{
         color: black;
       }
+
+
+/***************************************************/
+/*                  Board Stuff                    */
+/***************************************************/
+.board_container{
+    /* center vertically and horizontally */
+
+  position: absolute;
+  
+  top: 40%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  margin: -250px 0 0 -250px;
+
+}
+
+.board{
+ background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff));
+ padding: 10px;
+
+  /* left down size spread color */
+  -moz-box-shadow: 0px 3px 5px 3px #555;
+  -webkit-box-shadow: 0px 3px 5px 3px #555;
+  box-shadow: 0px 3px 5px 3px #555;
+  
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+}
+.ttt_square{
+  display: inline-block;
+  width: 137px;
+  height: 137px;
+  margin: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#333));
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  /* left down size spread color */
+  -moz-box-shadow:inset 0px 1px 2px 1px #000;
+  -webkit-box-shadow: inset 0px 1px 2px 1px #000;
+  box-shadow: inset 0px 1px 2px 1px #000;
+
+}
+
+.ttt_square:hover{
+   background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#222));
+ 
+}
+.ttt_square:active{
+    background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#111));
+      /* left down size spread color */
+  -moz-box-shadow: 0px 1px 2px 1px #000;
+  -webkit-box-shadow:  0px 1px 2px 1px #000;
+  box-shadow:  0px 1px 2px 1px #000;
+}
