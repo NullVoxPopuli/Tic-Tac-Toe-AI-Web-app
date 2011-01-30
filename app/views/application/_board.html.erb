@@ -16,7 +16,7 @@
           <% end %>
         <% else %>
           <div class="ttt_square"> 
-              <%= @board.state[col,row]%
+              <%= @board.state_of_location(col,row) %>
           </div>
         <% end %>
       <% end %>
