@@ -1,5 +1,8 @@
 TicTacToeAi::Application.routes.draw do
-  resources :board
+  resources :board do
+    match 'take_turn', :on => :collection
+  end
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -6,13 +6,13 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
  <script type="text/javascript">
-   isWebKit = function isWebKit()
+   isGoodBrowser = function isGoodBrowser()
 {
-    return RegExp(" AppleWebKit/").test(navigator.userAgent);
+    return (navigator.userAgent.indexOf('MSIE') ==-1);
 }
 
  $(document).ready(function(){
-   isAllowedToPlayGame = isWebKit();
+   isAllowedToPlayGame = isGoodBrowser();
    if(!isAllowedToPlayGame){
      $('.shell').hide();
      $('.browser_error').show();
@@ -31,7 +31,7 @@
   <%= yield %>
 </div>
 <div class="browser_error" style="display: none">
-  This app will only be correctly displayed in webkit browsers
+  This app will only be correctly displayed in webkit / gecko browsers.
 </div>
 
 <noscript class="browser_error">

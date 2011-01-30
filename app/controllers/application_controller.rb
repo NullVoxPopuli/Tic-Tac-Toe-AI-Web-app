@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
       @human_is_going_first = params[:human_is_first]
       @board = Board.new
       @board.init
+      @board.save
       
       if not @human_is_going_first
         @board.make_ai_make_a_move

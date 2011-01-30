@@ -1,0 +1,9 @@
+<div class="ttt_square"> 
+  <div class="player_take_square" id=<%= @x.to_s + "x" + @y.to_s %>_square style="display: none">
+    <% if @board.state_of_location(@x,@y) == Board::HUMAN %>
+      X
+    <% else %>
+      O
+    <% end %>
+  </div>
+</div>

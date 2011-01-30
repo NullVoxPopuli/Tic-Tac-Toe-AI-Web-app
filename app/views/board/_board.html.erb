@@ -1,0 +1,29 @@
+<div class="board_container" style="display: none">
+  <h1 class="site_title">Tic-Tac-Toe</h1>
+  <div class="board">
+    <% @board_state = @board.board_state %>
+    <% @board.width.times do |row| %>
+      <% @board.width.times do |col| %>
+        <% if @board.state_of_location(col, row) == nil %>
+          <div class="square_container" id=<%=  col.to_s + "x" + row.to_s %>>
+            <%= link_to( {:controller => 'board', 
+                              :action => 'take_turn', 
+                              :id => @board.id,
+                              :x => col, 
+                              :y => row} , :remote => true) do %>
+              <div class="ttt_square"> 
+                &nbsp;
+              </div>
+            <% end %>
+          </div>
+        <% else %>
+          <div class="ttt_square"> 
+              <%= @board.state_of_location(col,row) %>
+          </div>
+        <% end %>
+      <% end %>
+      <br>
+    <% end %>
+  </div>
+  
+</div>

@@ -5,6 +5,7 @@ class BoardTest < ActiveSupport::TestCase
   def setup
     @board = Board.new
     @board.init
+    @board.save
   end
   
   test "the initial set up of the winning rows in the board with width 3" do

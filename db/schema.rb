@@ -13,6 +13,8 @@
 ActiveRecord::Schema.define(:version => 20110128172158) do
 
   create_table "boards", :force => true do |t|
+    t.string   "state"
+    t.integer  "turn"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,48 +1,46 @@
 class Board < ActiveRecord::Base
-  
   WIDTH = 3
   NUM_SQUARES = WIDTH * WIDTH
   COMPUTER = 1
   HUMAN = 2
   
+  @board_layout = []
+  
   WINNING_ROWS = []
   WINNING_COLS = []
   WINNING_DIAG = []
-  
-  @board_layout = []
+    
+  serialize :state
     
   def init  
-    @board_layout = Array.new(NUM_SQUARES)
+    self.state = Array.new(NUM_SQUARES) if not self.state
     
     #generate the ways to win
-    if WINNING_ROWS.length < 1#don't re-compute
+    if WINNING_ROWS.length < 1 #don't re-compute
       WIDTH.times do |row|
-      
-        row_start = row * WIDTH
-        
+          
+      row_start = row * WIDTH
+          
         WINNING_ROWS << (row_start..row_start - 1 + WIDTH).to_a
         WINNING_COLS << (row..NUM_SQUARES - 1).step(WIDTH).to_a
       end
-      
-       WINNING_DIAG << (0..NUM_SQUARES).step(WIDTH + 1).to_a
-       WINNING_DIAG << (WIDTH - 1..NUM_SQUARES - WIDTH + 1).step(WIDTH - 1).to_a
-     end
+        
+      WINNING_DIAG << (0..NUM_SQUARES).step(WIDTH + 1).to_a
+      WINNING_DIAG << (WIDTH - 1..NUM_SQUARES - WIDTH + 1).step(WIDTH - 1).to_a
+    end
+
   end
   
   def board_state
-    @board_layout
+    self.state
   end
   
   def state_of_location(x, y)
-    @board_layout[WIDTH * y + x]
-  end
-  
-  def state=(custom_board)
-    @board_layout = custom_board
+    self.state[WIDTH * y + x]
   end
   
   def set_square(x, y, val)
-    @board_layout[self.width * y + x] = val
+    self.state[WIDTH * y + x] = val
   end
   
   def width
@@ -54,7 +52,7 @@ class Board < ActiveRecord::Base
   end
   
  def has_available_moves?
-   return @board_layout.include? nil
+   return self.state.include? nil
  end
  
  def make_move(x, y, player)
@@ -70,15 +68,15 @@ class Board < ActiveRecord::Base
   # false otherwise
   def does_a_winner_exist?
     result = false
-    WINNING_ROWS.each { |row| result = @board_layout[row[0]] if contains_win?(row) }
-    WINNING_COLS.each { |col| result = @board_layout[col[0]] if contains_win?(col) }
-    WINNING_DIAG.each { |diag| result = @board_layout[diag[0]] if contains_win?(diag)}
+    WINNING_ROWS.each { |row| result = self.state[row[0]] if contains_win?(row) }
+    WINNING_COLS.each { |col| result = self.state[col[0]] if contains_win?(col) }
+    WINNING_DIAG.each { |diag| result = self.state[diag[0]] if contains_win?(diag)}
     return result
   end
   
   def contains_win?(ttt_win_state)
     ttt_win_state.each do |pos|
-      return false if @board_layout[pos] != @board_layout[ttt_win_state[0]] or @board_layout[pos].nil?
+      return false if self.state[pos] != self.state[ttt_win_state[0]] or self.state[pos].nil?
     end
     
     return true
@@ -88,7 +86,7 @@ class Board < ActiveRecord::Base
     puts "Layout:"
     WIDTH.times do |row|
       WIDTH.times do |col|
-        print @board_layout[WIDTH * row + col]
+        print self.state[WIDTH * row + col]
       end
       puts " "
     end
