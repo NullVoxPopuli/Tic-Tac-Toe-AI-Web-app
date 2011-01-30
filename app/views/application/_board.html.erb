@@ -4,11 +4,21 @@
     <% @board_state = @board.board_state %>
     <% @board.width.times do |row| %>
       <% @board.width.times do |col| %>
-        <%= link_to :controller => 'board', :action => 'take_turn' do %>
-          <div class="ttt_square"> 
-            &nbsp;
-          </div>
+        <% if @board.state_of_location(col, row) == nil or @board.state_of_location(col, row) != Board::COMPUTER %>
+          <%= link_to :controller => 'board', 
+                      :action => 'take_turn', 
+                      :board => @board.id,
+                      :x => col, 
+                      :y => row do %>
+            <div class="ttt_square"> 
+              &nbsp;
+            </div>
           <% end %>
+        <% else %>
+          <div class="ttt_square"> 
+              <%= @board.state[col,row]%
+          </div>
+        <% end %>
       <% end %>
       <br>
     <% end %>

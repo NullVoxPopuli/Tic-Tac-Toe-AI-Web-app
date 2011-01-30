@@ -10,9 +10,13 @@ class ApplicationController < ActionController::Base
       @board = Board.new
       @board.init
       
-        if request.xhr?
-            render 'start_game.js.erb', :layout => false
-        end
+      if not @human_is_going_first
+        @board.make_ai_make_a_move
+      end
+      
+      if request.xhr?
+          render 'start_game.js.erb', :layout => false
+      end
     end
 
 end

@@ -9,7 +9,7 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 module TicTacToeAi
   class Application < Rails::Application
     config.action_view.javascript_expansions[:defaults] = 
-          ['jquery-1.4.3.min.js', 'rails.js','application.js'] 
+          ['jquery-1.4.4.min.js', 'rails.js','application.js'] 
           
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
