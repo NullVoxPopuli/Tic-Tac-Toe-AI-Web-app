@@ -11,15 +11,18 @@ class BoardController < ApplicationController
     
     @board.make_move(@x, @y, @player)
 
-    
+    @x_ai = nil
+    @y_ai = nil
     if @board.has_available_moves?
-      @board.make_ai_make_a_move
-         
-      render 'refresh_board.js.erb', :layout => false
-    else
-      render 'winner.js.erb', :layout => false
+      ai_move = @board.make_ai_make_a_move
+      
+      @x_ai = ai_move[0]
+      @y_ai = ai_move[1]
     end
-    
+   
+   @board.save
+   render 'refresh_board.js.erb', :layout => false
+
   end
   
 end

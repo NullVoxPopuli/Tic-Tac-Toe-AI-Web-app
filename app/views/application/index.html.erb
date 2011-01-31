@@ -7,8 +7,19 @@
       Would you like to go first?
   
       <ul class="choose_options">
-        <li><%= link_to "Yes", { :controller => 'application', :action => 'start_game', :human_is_first => true  }, :remote => true  %></li>
-        <li><%= link_to "No", { :controller => 'application', :action => 'start_game', :human_is_first => false  }, :remote => true  %></li>
+        <li>
+          <%= link_to( { :controller => 'application', :action => 'start_game', 
+                                 :human_is_first => true  }, :remote => true) do %>
+            <span>Yes</span>
+          
+          <% end %>
+        </li>
+        <li>
+          <%= link_to( { :controller => 'application', :action => 'start_game', 
+                                :human_is_first => false  }, :remote => true) do %>
+            <span>No</span>
+          <% end %>
+        </li>
       </ul>
     </div>
   </div>

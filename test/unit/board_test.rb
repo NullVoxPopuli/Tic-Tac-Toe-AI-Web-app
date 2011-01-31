@@ -8,17 +8,17 @@ class BoardTest < ActiveSupport::TestCase
     @board.save
   end
   
-  test "the initial set up of the winning rows in the board with width 3" do
-    assert_equal(Board::WINNING_ROWS, [[0, 1, 2], [3, 4, 5], [6, 7, 8]])
-  end
-  
-  test "the initial set up of the winning cols in the board with width 3" do
-    assert_equal(Board::WINNING_COLS, [[0, 3, 6], [1, 4, 7], [2, 5, 8]])
-  end
-  
-  test "the initial set up of the winning diags in the board with width 3" do
-    assert_equal(Board::WINNING_DIAG, [[0, 4, 8], [2, 4, 6]])
-  end
+  # test "the initial set up of the winning rows in the board with width 3" do
+  #   assert_equal(Board::WINNING_ROWS, [[0, 1, 2], [3, 4, 5], [6, 7, 8]])
+  # end
+  # 
+  # test "the initial set up of the winning cols in the board with width 3" do
+  #   assert_equal(Board::WINNING_COLS, [[0, 3, 6], [1, 4, 7], [2, 5, 8]])
+  # end
+  # 
+  # test "the initial set up of the winning diags in the board with width 3" do
+  #   assert_equal(Board::WINNING_DIAG, [[0, 4, 8], [2, 4, 6]])
+  # end
     
    ###########################
    #  Testing contains_win?  #
