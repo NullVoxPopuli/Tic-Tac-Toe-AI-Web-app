@@ -1,6 +1,7 @@
 TicTacToeAi::Application.routes.draw do
   resources :board do
     match 'take_turn', :on => :collection
+    match 'start_game', :on => :collection
   end
   
   # The priority is based upon order of creation:

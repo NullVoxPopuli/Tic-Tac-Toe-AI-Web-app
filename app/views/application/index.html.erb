@@ -8,14 +8,14 @@
   
       <ul class="choose_options">
         <li>
-          <%= link_to( { :controller => 'application', :action => 'start_game', 
+          <%= link_to( { :controller => 'board', :action => 'start_game', 
                                  :human_is_first => true  }, :remote => true) do %>
             <span>Yes</span>
           
           <% end %>
         </li>
         <li>
-          <%= link_to( { :controller => 'application', :action => 'start_game', 
+          <%= link_to( { :controller => 'board', :action => 'start_game', 
                                 :human_is_first => false  }, :remote => true) do %>
             <span>No</span>
           <% end %>

@@ -1,3 +1,18 @@
+<script type="text/javascript">
+var links_disabled = false;
+
+$('a').click(function(e){
+  links_disabled = (links_disabled ? false : true);
+});
+
+$.ajax({
+  ajaxStart: function(){
+    $('a').attr('disabled', 'disabled');
+  }
+});
+</script>
+
+
 <div class="board_container" style="display: none">
   <h1 class="site_title">Tic-Tac-Toe</h1>
   <div class="board">
@@ -10,16 +25,18 @@
                               :action => 'take_turn', 
                               :id => @board.id,
                               :x => col, 
-                              :y => row} , :remote => true) do %>
+                              :y => row} , :remote => true, :onClick => "return links_disabled;") do %>
               <div class="ttt_square"> 
                 &nbsp;
               </div>
             <% end %>
           </span>
         <% else %>
-          <span class="ttt_square"> 
-              <%= @board.state_of_location(col,row) %>
-          </span>
+          <% if @x_ai %>
+            <% @x = @x_ai %>
+            <% @y = @y_ai %>
+          <% end %>
+          <%= render :partial => "used_space", :locals => {display => true}%>
         <% end %>
       <% end %>
       <br>
