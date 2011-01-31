@@ -10,15 +10,23 @@ class BoardController < ApplicationController
     @player = Board::HUMAN
     
     @board.make_move(@x, @y, @player)
+    end_game = @board.check_end_of_game
+    
+    #if end_game != Board::HUMAN
+      @x_ai = nil
+      @y_ai = nil
+      if @board.has_available_moves?
+        ai_move = @board.make_ai_make_a_move
 
-    @x_ai = nil
-    @y_ai = nil
-    if @board.has_available_moves?
-      ai_move = @board.make_ai_make_a_move
-      
-      @x_ai = ai_move[0]
-      @y_ai = ai_move[1]
-    end
+        @x_ai = ai_move % Board::WIDTH
+        @y_ai = (ai_move - @x_ai) / Board::WIDTH
+        
+        @board.make_move(@x_ai, @y_ai, Board::COMPUTER)
+        
+      end
+    #else
+      # do something with the game ending
+    #end
    
    @board.save
    render 'refresh_board.js.erb', :layout => false

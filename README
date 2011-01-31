@@ -1,6 +1,6 @@
 Tic Tac Toe A.I. by L. Preston Sego III
 
-Written in Ruby on (Rails 3)
+Written in Ruby (1.8.7) on (Rails 3)
 • uses jQuery for the javascriptyness
   • removed Prototype
 

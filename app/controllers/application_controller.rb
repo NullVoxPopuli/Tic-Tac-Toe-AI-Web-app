@@ -12,7 +12,11 @@ class ApplicationController < ActionController::Base
       @board.save
       
       if not @human_is_going_first
-        @board.make_ai_make_a_move
+        ai_move = @board.make_ai_make_a_move
+        @x_ai = ai_move % Board::WIDTH
+        @y_ai = (ai_move - @x_ai) / Board::WIDTH
+        
+        @board.make_move(@x_ai, @y_ai, Board::COMPUTER)
       end
       
       if request.xhr?

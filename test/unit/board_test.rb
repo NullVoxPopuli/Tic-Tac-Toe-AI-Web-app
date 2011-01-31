@@ -158,6 +158,38 @@ class BoardTest < ActiveSupport::TestCase
    end
    
    
+   ##########################
+   # Test state_of_location #
+   ##########################
+   test "if the returning of the state of a spot on the grid is correct for nil" do
+     @board.state = [nil,nil,nil,1,2,1,nil,nil,nil]
+     assert_equal(nil, @board.state_of_location(0,0))
+   end 
+
+   test "if the returning of the state of a spot on the grid is correct for 1" do
+     @board.state = [nil,nil,nil,1,2,1,nil,nil,nil]
+     assert_equal(1, @board.state_of_location(0,1))
+   end 
+   
+   ########################
+   # Test remaining_moves #
+   ########################
+   test "if remaining_moves / spaces are calculated correctly" do
+     @board.state = [1,2,nil,1,1,1,2,2,2]
+     assert_equal([2], @board.remaining_moves)
+   end
+   
+   test "if remaining_moves / spaces are calculated correctly for no moves used" do
+     @board.state = [nil,nil,nil,nil,nil,nil,nil,nil,nil]
+     assert_equal([0,1,2,3,4,5,6,7,8], @board.remaining_moves)
+   end
+   
+   test "if remaining_moves / spaces are calculated correctly for all moves used" do
+     @board.state = [1,2,1,2,1,2,1,2,1]
+     assert_equal([], @board.remaining_moves)
+   end
+   
+      
   def teardown
 
   end
