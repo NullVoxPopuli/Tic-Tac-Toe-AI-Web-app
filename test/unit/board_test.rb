@@ -140,8 +140,7 @@ class BoardTest < ActiveSupport::TestCase
     
    ####################
    #  Test make_move  #
-   ####################    
-   
+   ####################
    # since this method only accepts input from automatically
    # generated links, testing outside the bounds isn't 
    # necissary
@@ -156,6 +155,25 @@ class BoardTest < ActiveSupport::TestCase
      @board.make_move(2,2,Board::HUMAN)
      assert_equal(@board.board_state[8], Board::HUMAN)  
    end
+   
+   #############################
+   # test make_move_with_index #
+   #############################
+   test "making a move with a valid index, rather than x,y coords min" do
+     @board.state = [nil,nil,nil,nil,nil,nil,nil,nil,nil]
+     @board.make_move_with_index(0, 1)
+     assert_equal(1, @board.board_state[0])
+   end
+   
+   test "making a move with a valid index, rather than x,y coords max" do
+     @board.state = [nil,nil,nil,nil,nil,nil,nil,nil,nil]
+     @board.make_move_with_index(8, 1)
+     assert_equal(1, @board.board_state[8])
+   end
+   
+   ##################
+   # test undo_move #
+   ##################
    
    
    ##########################
@@ -189,6 +207,14 @@ class BoardTest < ActiveSupport::TestCase
      assert_equal([], @board.remaining_moves)
    end
    
+   
+   #############
+   # Test A.I. #
+   #############
+   test "make sure that the A.I. doesn't choose the same spot we choose" do
+     @board.state = [nil,nil,nil,nil,nil,nil,nil,nil,nil]
+     
+   end
       
   def teardown
 

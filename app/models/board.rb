@@ -78,7 +78,7 @@ class Board < ActiveRecord::Base
  # and 
  # http://en.wikipedia.org/wiki/Negamax
  def make_ai_make_a_move
-   @remaining_moves = self.state.each_with_index.map{|e,i| (e.nil?) ? nil : i }.compact
+   
    #self.state.each_with_index do |item, index|
    #  @remaining_moves << index unless item.nil?
    #end
@@ -90,13 +90,11 @@ class Board < ActiveRecord::Base
    
    sim_player = COMPUTER
    
-   @remaining_moves.each do |available_move|
+   self.remaining_moves.each do |available_move|
      self.make_move_with_index(available_move, sim_player)
-     @remaining_moves.delete(available_move)
      sim_player = switch_player(sim_player)
      move_val = -negamax(sim_player)
      self.undo_move(available_move)
-     @remaining_moves << available_move
 
      if move_rank < move_val
        move_rank = move_val
@@ -113,12 +111,10 @@ class Board < ActiveRecord::Base
    
    best_score = -255
    
-   @remaining_moves.each do |available_move|
+   self.remaining_moves.each do |available_move|
      self.make_move_with_index(available_move, sim_player)
-     @remaining_moves.delete(available_move)
      value = -negamax(switch_player(sim_player))
      self.undo_move(available_move)
-     @remaining_moves << available_move
 
      best_score = value if value > best_score
    end
