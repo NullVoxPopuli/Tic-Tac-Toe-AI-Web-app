@@ -1,11 +1,13 @@
+$( "#<%= escape_javascript(@x.to_s + "x" + @y.to_s) %>" ).html( "<%= escape_javascript( render( :partial => "used_space" ) ) %>" );
+$("#<%= escape_javascript(@x.to_s + "x" + @y.to_s) %>_square").fadeIn(500);
 
 <% if not @x_ai.nil? and not @y_ai.nil? %>
   <% @x = @x_ai %>
   <% @y = @y_ai %>
+  $( "#<%= escape_javascript(@x.to_s + "x" + @y.to_s) %>" ).html( "<%= escape_javascript( render( :partial => "used_space" ) ) %>" );
+  $("#<%= escape_javascript(@x.to_s + "x" + @y.to_s) %>_square").fadeIn(500);
 <% end %>
-$( "#<%= escape_javascript(@x.to_s + "x" + @y.to_s) %>" ).html( "<%= escape_javascript( render( :partial => "used_space" ) ) %>" );
-$("#<%= escape_javascript(@x.to_s + "x" + @y.to_s) %>_square").fadeIn(500);
 
 $(".game_over_state").html("<%= @game_over_state_message %>");
 $(".outcome").html("<%= @outcome_message %>");
-$("#game_over_overlay").fadeIn(500);
+$(".overlay_container").fadeIn(400);
