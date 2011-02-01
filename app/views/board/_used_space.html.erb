@@ -1,5 +1,5 @@
 <span class="ttt_square"> 
-  <div class="player_take_square" id="<%= @x.to_s + "x" + @y.to_s %>_square" style="display: <%= display ? "block" : "none" %>">
+  <div class="player_take_square" id="<%= @x.to_s + "x" + @y.to_s %>_square" style="display: <%= @display ? "block" : "none" %>">
     <% if @board.state_of_location(@x,@y) == Board::HUMAN %>
       X
     <% elsif @board.state_of_location(@x,@y) == Board::COMPUTER %>
@@ -7,4 +7,3 @@
     <% end %>
   </div>
 </span>
-        

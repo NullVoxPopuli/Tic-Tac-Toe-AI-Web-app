@@ -15,6 +15,11 @@ $.ajax({
 
 <div class="board_container" style="display: none">
   <h1 class="site_title">Tic-Tac-Toe</h1>
+  <div id="game_over_overlay" style="display: none">
+    <span class="game_over_state"></span>
+    <span class="outcome"></span>
+  </div>
+
   <div class="board">
     <% @board_state = @board.board_state %>
     <% @board.width.times do |row| %>
@@ -36,7 +41,8 @@ $.ajax({
             <% @x = @x_ai %>
             <% @y = @y_ai %>
           <% end %>
-          <%= render :partial => "used_space", :locals => {display => true}%>
+          <% @display = true %>
+          <%= render :partial => "used_space" %>
         <% end %>
       <% end %>
       <br>
@@ -44,3 +50,5 @@ $.ajax({
   </div>
   
 </div>
+
+

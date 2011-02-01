@@ -12,8 +12,8 @@ class BoardController < ApplicationController
       if not @human_is_going_first 
         time1 = Time.new
 
-        ai_move = @board.make_ai_make_a_move
- puts "====================="
+        ai_move = @board.calculate_ai_next_move
+        puts "====================="
         puts "A.I. took this long (seconds) to decide where to move: " + (Time.new - time1).inspect
         
         @x_ai = ai_move % Board::WIDTH
@@ -38,12 +38,13 @@ class BoardController < ApplicationController
     @board.make_move(@x, @y, @player)
     end_game = @board.check_end_of_game
     
-    #if end_game != Board::HUMAN
+    
+    if not @board.has_this_player_won?(Board::HUMAN)
       @x_ai = nil
       @y_ai = nil
       if @board.has_available_moves?
         time1 = Time.new
-        ai_move = @board.make_ai_make_a_move
+        ai_move = @board.calculate_ai_next_move
         puts "====================="
         puts "A.I. took this long (seconds) to decide where to move: " + (Time.new - time1).inspect
         
@@ -52,14 +53,36 @@ class BoardController < ApplicationController
         
         @board.make_move(@x_ai, @y_ai, Board::COMPUTER)
         
+        if @board.has_this_player_won?(Board::COMPUTER)
+          display_win(Board::COMPUTER)
+          return
+        end
+      else
+        display_tie
+        return
       end
-    #else
+      
+    else
       # do something with the game ending
-    #end
+      display_win(Board::HUMAN)
+      return
+    end
    
    @board.save
    render 'refresh_board.js.erb', :layout => false
 
   end
   
+  
+  def display_win(player)
+    @game_over_state_message = "Winner:"
+    @outcome_message = (player == Board::COMPUTER ? "Computer" : "Human")
+    render "game_over.js.erb", :layout => false
+  end
+  
+  def display_tie
+    @game_over_state_message = "Tie"
+    @outcome_message = "Refresh to play again."
+    render "game_over.js.erb", :layout => false
+  end
 end

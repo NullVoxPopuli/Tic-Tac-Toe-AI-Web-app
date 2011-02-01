@@ -4219,3 +4219,5362 @@
 - 
 - 
 ', NULL)[0m
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.667558', NULL, '2011-02-01 04:08:11.667558')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.715532', NULL, '2011-02-01 04:08:11.715532')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.718672', NULL, '2011-02-01 04:08:11.718672')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.721201', NULL, '2011-02-01 04:08:11.721201')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.724167', NULL, '2011-02-01 04:08:11.724167')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.727506', NULL, '2011-02-01 04:08:11.727506')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.729989', NULL, '2011-02-01 04:08:11.729989')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.732341', NULL, '2011-02-01 04:08:11.732341')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.734771', NULL, '2011-02-01 04:08:11.734771')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.737822', NULL, '2011-02-01 04:08:11.737822')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.749787', NULL, '2011-02-01 04:08:11.749787')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.801683', NULL, '2011-02-01 04:08:11.801683')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.805276', NULL, '2011-02-01 04:08:11.805276')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.807990', NULL, '2011-02-01 04:08:11.807990')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.810505', NULL, '2011-02-01 04:08:11.810505')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.813363', NULL, '2011-02-01 04:08:11.813363')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.817137', NULL, '2011-02-01 04:08:11.817137')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.820600', NULL, '2011-02-01 04:08:11.820600')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.823350', NULL, '2011-02-01 04:08:11.823350')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.827189', NULL, '2011-02-01 04:08:11.827189')[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.830970', NULL, '2011-02-01 04:08:11.830970')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.834719', NULL, '2011-02-01 04:08:11.834719')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:08:11.838013', NULL, '2011-02-01 04:08:11.838013')
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.380049', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.380049')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.391873', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.391873')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.394583', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.394583')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.397353', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.397353')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.401161', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.401161')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.404723', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.404723')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.407944', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.407944')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.411051', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.411051')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.415042', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.415042')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.417666', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.417666')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.420659', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.420659')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.423692', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.423692')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.483377', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.483377')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.486485', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.486485')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.489107', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.489107')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.493492', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.493492')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.497763', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.497763')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.500550', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.500550')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.503131', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.503131')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.508194', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.508194')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.511086', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.511086')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.513652', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.513652')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.517241', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.517241')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.521710', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.521710')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.524853', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.524853')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.528951', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.528951')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.532822', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.532822')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:03.536815', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:03.536815')[0m
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.116677', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.116677')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.128516', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.128516')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.131424', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.131424')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.134160', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.134160')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.137205', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.137205')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.140815', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.140815')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.149797', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.149797')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.153552', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.153552')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.157588', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.157588')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.161257', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.161257')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.165334', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.165334')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.219214', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.219214')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.221895', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.221895')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.224365', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.224365')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.227227', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.227227')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.231078', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.231078')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.235929', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.235929')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.239947', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.239947')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.243870', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.243870')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.247242', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.247242')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.250590', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.250590')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.253363', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.253363')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.257752', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.257752')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.260955', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.260955')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.264012', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.264012')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.266581', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.266581')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.269226', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.269226')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:13:34.274594', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:13:34.274594')[0m
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.306161', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.306161')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.318186', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.318186')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.320966', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.320966')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.323436', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.323436')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.326382', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.326382')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.330449', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.330449')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.339775', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.339775')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.342706', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.342706')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.345580', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.345580')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.348947', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.348947')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.353940', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.353940')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.408437', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.408437')[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.412372', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.412372')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.417069', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.417069')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.421329', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.421329')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.426419', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.426419')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.431783', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.431783')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.436583', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.436583')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.440865', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.440865')
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.444937', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.444937')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.449577', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.449577')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.452624', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.452624')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.455948', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.455948')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.458800', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.458800')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.461834', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.461834')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.465444', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.465444')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.470025', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.470025')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:18.474136', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:18.474136')[0m
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.260464', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.260464')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.272380', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.272380')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.275892', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.275892')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.278524', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.278524')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.281757', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.281757')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.284764', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.284764')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.287390', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.287390')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.290283', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.290283')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.293566', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.293566')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.296846', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.296846')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.300806', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.300806')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.303544', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.303544')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.360937', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.360937')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.363965', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.363965')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.366526', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.366526')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.369213', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.369213')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.372680', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.372680')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.375229', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.375229')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.377916', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.377916')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.381173', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.381173')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.384199', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.384199')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.386866', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.386866')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.389253', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.389253')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.392345', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.392345')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.396434', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.396434')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.399472', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.399472')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.402501', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.402501')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:15:57.405672', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:15:57.405672')[0m
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.066009', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.066009')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.077687', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.077687')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.086252', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.086252')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.089443', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.089443')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.092039', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.092039')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.096104', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.096104')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.099711', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.099711')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.102490', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.102490')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.105738', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.105738')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.108742', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.108742')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.162241', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.162241')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.166383', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.166383')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.169970', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.169970')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.172796', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.172796')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.176574', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.176574')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.179480', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.179480')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.182219', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.182219')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.185094', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.185094')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.189089', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.189089')
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.191849', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.191849')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.196293', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.196293')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.199508', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.199508')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.203806', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.203806')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.206759', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.206759')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.211322', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.211322')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.214695', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.214695')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.217290', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.217290')
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:20:01.220674', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:20:01.220674')[0m
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.413680', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.413680')
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.424797', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.424797')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.429517', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.429517')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.432395', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.432395')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.435586', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.435586')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.438071', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.438071')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.440649', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.440649')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.443045', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.443045')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.446051', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.446051')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.448761', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.448761')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.451379', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.451379')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.454698', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.454698')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.513326', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.513326')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.516313', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.516313')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.519062', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.519062')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.521859', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.521859')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.525406', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.525406')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.528778', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.528778')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.531594', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.531594')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.534886', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.534886')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.537985', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.537985')
+  [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.541617', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.541617')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.546722', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.546722')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.551082', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.551082')[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.554237', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.554237')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.559089', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.559089')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.562754', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.562754')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "state", "created_at") VALUES ('2011-02-01 04:22:09.566534', NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:22:09.566534')[0m
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.760250', '2011-02-01 04:40:16.760250', NULL)
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.800809', '2011-02-01 04:40:16.800809', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.804852', '2011-02-01 04:40:16.804852', NULL)
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.808938', '2011-02-01 04:40:16.808938', NULL)[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.812470', '2011-02-01 04:40:16.812470', NULL)
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.816055', '2011-02-01 04:40:16.816055', NULL)[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.819284', '2011-02-01 04:40:16.819284', NULL)
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.822753', '2011-02-01 04:40:16.822753', NULL)[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.825435', '2011-02-01 04:40:16.825435', NULL)
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.828501', '2011-02-01 04:40:16.828501', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.831750', '2011-02-01 04:40:16.831750', NULL)
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.835058', '2011-02-01 04:40:16.835058', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.901667', '2011-02-01 04:40:16.901667', NULL)
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.905295', '2011-02-01 04:40:16.905295', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.910491', '2011-02-01 04:40:16.910491', NULL)
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.914623', '2011-02-01 04:40:16.914623', NULL)[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.917923', '2011-02-01 04:40:16.917923', NULL)
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.922097', '2011-02-01 04:40:16.922097', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.925756', '2011-02-01 04:40:16.925756', NULL)
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.929236', '2011-02-01 04:40:16.929236', NULL)[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.932487', '2011-02-01 04:40:16.932487', NULL)
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.937480', '2011-02-01 04:40:16.937480', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.940782', '2011-02-01 04:40:16.940782', NULL)
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.946592', '2011-02-01 04:40:16.946592', NULL)[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.950506', '2011-02-01 04:40:16.950506', NULL)
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.953410', '2011-02-01 04:40:16.953410', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.956710', '2011-02-01 04:40:16.956710', NULL)
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.960707', '2011-02-01 04:40:16.960707', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "created_at", "updated_at", "turn") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:16.963867', '2011-02-01 04:40:16.963867', NULL)
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:35.986143', '2011-02-01 04:40:35.986143')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.001536', '2011-02-01 04:40:36.001536')[0m
+  [1m[35mAREL (0.6ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.005133', '2011-02-01 04:40:36.005133')
+  [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.009702', '2011-02-01 04:40:36.009702')[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.014669', '2011-02-01 04:40:36.014669')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.019761', '2011-02-01 04:40:36.019761')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.024286', '2011-02-01 04:40:36.024286')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.028419', '2011-02-01 04:40:36.028419')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.032959', '2011-02-01 04:40:36.032959')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.037006', '2011-02-01 04:40:36.037006')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.040777', '2011-02-01 04:40:36.040777')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.044577', '2011-02-01 04:40:36.044577')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.110985', '2011-02-01 04:40:36.110985')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.114534', '2011-02-01 04:40:36.114534')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.130777', '2011-02-01 04:40:36.130777')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.135432', '2011-02-01 04:40:36.135432')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.138999', '2011-02-01 04:40:36.138999')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.143106', '2011-02-01 04:40:36.143106')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.147348', '2011-02-01 04:40:36.147348')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.151590', '2011-02-01 04:40:36.151590')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.155122', '2011-02-01 04:40:36.155122')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.158802', '2011-02-01 04:40:36.158802')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.161650', '2011-02-01 04:40:36.161650')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.165235', '2011-02-01 04:40:36.165235')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.167967', '2011-02-01 04:40:36.167967')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.170663', '2011-02-01 04:40:36.170663')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.174490', '2011-02-01 04:40:36.174490')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.178135', '2011-02-01 04:40:36.178135')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:40:36.181843', '2011-02-01 04:40:36.181843')
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.352655', '2011-02-01 04:41:51.352655', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.364445', '2011-02-01 04:41:51.364445', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.367933', '2011-02-01 04:41:51.367933', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.372562', '2011-02-01 04:41:51.372562', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.378158', '2011-02-01 04:41:51.378158', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.400811', '2011-02-01 04:41:51.400811', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.405142', '2011-02-01 04:41:51.405142', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.412707', '2011-02-01 04:41:51.412707', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.417896', '2011-02-01 04:41:51.417896', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.421788', '2011-02-01 04:41:51.421788', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.426783', '2011-02-01 04:41:51.426783', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.430975', '2011-02-01 04:41:51.430975', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.497053', '2011-02-01 04:41:51.497053', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.499793', '2011-02-01 04:41:51.499793', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.502416', '2011-02-01 04:41:51.502416', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.505208', '2011-02-01 04:41:51.505208', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.508658', '2011-02-01 04:41:51.508658', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.511782', '2011-02-01 04:41:51.511782', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.515607', '2011-02-01 04:41:51.515607', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.519291', '2011-02-01 04:41:51.519291', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.521940', '2011-02-01 04:41:51.521940', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.525184', '2011-02-01 04:41:51.525184', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.529009', '2011-02-01 04:41:51.529009', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.533058', '2011-02-01 04:41:51.533058', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.535610', '2011-02-01 04:41:51.535610', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.538804', '2011-02-01 04:41:51.538804', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.542443', '2011-02-01 04:41:51.542443', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.545067', '2011-02-01 04:41:51.545067', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-01 04:41:51.548620', '2011-02-01 04:41:51.548620', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.132479', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.132479')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.156037', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.156037')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.159895', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.159895')
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.163462', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.163462')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.167639', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.167639')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.170680', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.170680')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.181660', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.181660')
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.192333', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.192333')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.197244', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.197244')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.200967', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.200967')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.204333', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.204333')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.261877', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.261877')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.265771', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.265771')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.271063', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.271063')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.276190', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.276190')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.280598', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.280598')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.284910', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.284910')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.288279', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.288279')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.291941', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.291941')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.295960', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.295960')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.298909', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.298909')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.305062', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.305062')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.309035', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.309035')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.312046', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.312046')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.315732', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.315732')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.319280', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.319280')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.321980', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.321980')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.324996', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.324996')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "created_at", "state", "updated_at") VALUES (NULL, '2011-02-01 04:50:36.330431', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-01 04:50:36.330431')
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.774182', '2011-02-01 04:51:07.774182', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.790370', '2011-02-01 04:51:07.790370', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.793985', '2011-02-01 04:51:07.793985', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.796770', '2011-02-01 04:51:07.796770', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.800007', '2011-02-01 04:51:07.800007', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.803251', '2011-02-01 04:51:07.803251', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.806821', '2011-02-01 04:51:07.806821', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.810784', '2011-02-01 04:51:07.810784', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.814128', '2011-02-01 04:51:07.814128', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.817726', '2011-02-01 04:51:07.817726', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.821742', '2011-02-01 04:51:07.821742', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.824815', '2011-02-01 04:51:07.824815', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.828207', '2011-02-01 04:51:07.828207', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.831762', '2011-02-01 04:51:07.831762', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.891093', '2011-02-01 04:51:07.891093', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.894044', '2011-02-01 04:51:07.894044', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.897355', '2011-02-01 04:51:07.897355', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.901474', '2011-02-01 04:51:07.901474', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.905123', '2011-02-01 04:51:07.905123', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.908264', '2011-02-01 04:51:07.908264', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.912239', '2011-02-01 04:51:07.912239', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.921220', '2011-02-01 04:51:07.921220', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.925407', '2011-02-01 04:51:07.925407', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.929235', '2011-02-01 04:51:07.929235', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.932300', '2011-02-01 04:51:07.932300', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.935622', '2011-02-01 04:51:07.935622', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.938768', '2011-02-01 04:51:07.938768', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.941966', '2011-02-01 04:51:07.941966', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("turn", "created_at", "updated_at", "state") VALUES (NULL, '2011-02-01 04:51:07.945729', '2011-02-01 04:51:07.945729', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.028994', '2011-02-01 16:06:50.028994')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.062048', '2011-02-01 16:06:50.062048')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.064935', '2011-02-01 16:06:50.064935')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.067703', '2011-02-01 16:06:50.067703')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.070340', '2011-02-01 16:06:50.070340')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.073485', '2011-02-01 16:06:50.073485')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.087823', '2011-02-01 16:06:50.087823')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.091304', '2011-02-01 16:06:50.091304')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.093866', '2011-02-01 16:06:50.093866')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.097449', '2011-02-01 16:06:50.097449')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.101097', '2011-02-01 16:06:50.101097')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.154968', '2011-02-01 16:06:50.154968')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.157642', '2011-02-01 16:06:50.157642')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.160404', '2011-02-01 16:06:50.160404')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.163230', '2011-02-01 16:06:50.163230')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.166584', '2011-02-01 16:06:50.166584')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.171158', '2011-02-01 16:06:50.171158')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.174347', '2011-02-01 16:06:50.174347')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.178228', '2011-02-01 16:06:50.178228')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.181696', '2011-02-01 16:06:50.181696')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.184440', '2011-02-01 16:06:50.184440')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.190545', '2011-02-01 16:06:50.190545')[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.194822', '2011-02-01 16:06:50.194822')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.198326', '2011-02-01 16:06:50.198326')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.201243', '2011-02-01 16:06:50.201243')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.203775', '2011-02-01 16:06:50.203775')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.206900', '2011-02-01 16:06:50.206900')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.209877', '2011-02-01 16:06:50.209877')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:06:50.213106', '2011-02-01 16:06:50.213106')
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.811121', '2011-02-01 16:09:39.811121')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.823562', '2011-02-01 16:09:39.823562')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.826669', '2011-02-01 16:09:39.826669')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.829198', '2011-02-01 16:09:39.829198')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.832051', '2011-02-01 16:09:39.832051')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.835172', '2011-02-01 16:09:39.835172')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.838183', '2011-02-01 16:09:39.838183')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.840757', '2011-02-01 16:09:39.840757')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.844103', '2011-02-01 16:09:39.844103')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.846668', '2011-02-01 16:09:39.846668')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.849120', '2011-02-01 16:09:39.849120')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.851707', '2011-02-01 16:09:39.851707')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.855078', '2011-02-01 16:09:39.855078')
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.857595', '2011-02-01 16:09:39.857595')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.911513', '2011-02-01 16:09:39.911513')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.914219', '2011-02-01 16:09:39.914219')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.916745', '2011-02-01 16:09:39.916745')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.919356', '2011-02-01 16:09:39.919356')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.922529', '2011-02-01 16:09:39.922529')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.925086', '2011-02-01 16:09:39.925086')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.928234', '2011-02-01 16:09:39.928234')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.932323', '2011-02-01 16:09:39.932323')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.936364', '2011-02-01 16:09:39.936364')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.939196', '2011-02-01 16:09:39.939196')[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.942881', '2011-02-01 16:09:39.942881')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.947375', '2011-02-01 16:09:39.947375')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.951002', '2011-02-01 16:09:39.951002')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.955411', '2011-02-01 16:09:39.955411')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:09:39.959092', '2011-02-01 16:09:39.959092')
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.503099', '2011-02-01 16:12:38.503099')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.514236', '2011-02-01 16:12:38.514236')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.516669', '2011-02-01 16:12:38.516669')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.519545', '2011-02-01 16:12:38.519545')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.522295', '2011-02-01 16:12:38.522295')
+  [1m[36mAREL (0.8ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.526085', '2011-02-01 16:12:38.526085')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.530379', '2011-02-01 16:12:38.530379')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.533365', '2011-02-01 16:12:38.533365')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.538365', '2011-02-01 16:12:38.538365')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.541879', '2011-02-01 16:12:38.541879')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.544730', '2011-02-01 16:12:38.544730')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.547862', '2011-02-01 16:12:38.547862')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.550819', '2011-02-01 16:12:38.550819')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.554573', '2011-02-01 16:12:38.554573')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.611303', '2011-02-01 16:12:38.611303')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.613929', '2011-02-01 16:12:38.613929')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.616368', '2011-02-01 16:12:38.616368')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.618611', '2011-02-01 16:12:38.618611')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.622293', '2011-02-01 16:12:38.622293')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.626717', '2011-02-01 16:12:38.626717')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.629701', '2011-02-01 16:12:38.629701')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.633349', '2011-02-01 16:12:38.633349')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.637615', '2011-02-01 16:12:38.637615')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.640566', '2011-02-01 16:12:38.640566')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.643738', '2011-02-01 16:12:38.643738')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.646585', '2011-02-01 16:12:38.646585')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.649134', '2011-02-01 16:12:38.649134')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.651711', '2011-02-01 16:12:38.651711')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:38.655640', '2011-02-01 16:12:38.655640')
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.335871', '2011-02-01 16:12:46.335871')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.347016', '2011-02-01 16:12:46.347016')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.350234', '2011-02-01 16:12:46.350234')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.353129', '2011-02-01 16:12:46.353129')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.355714', '2011-02-01 16:12:46.355714')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.358847', '2011-02-01 16:12:46.358847')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.361538', '2011-02-01 16:12:46.361538')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.364018', '2011-02-01 16:12:46.364018')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.366527', '2011-02-01 16:12:46.366527')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.369838', '2011-02-01 16:12:46.369838')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.372616', '2011-02-01 16:12:46.372616')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.375156', '2011-02-01 16:12:46.375156')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.379627', '2011-02-01 16:12:46.379627')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.382334', '2011-02-01 16:12:46.382334')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.438461', '2011-02-01 16:12:46.438461')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.441155', '2011-02-01 16:12:46.441155')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.443978', '2011-02-01 16:12:46.443978')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.447162', '2011-02-01 16:12:46.447162')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.450891', '2011-02-01 16:12:46.450891')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.454895', '2011-02-01 16:12:46.454895')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.459318', '2011-02-01 16:12:46.459318')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.466198', '2011-02-01 16:12:46.466198')[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.471432', '2011-02-01 16:12:46.471432')
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.476489', '2011-02-01 16:12:46.476489')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.481854', '2011-02-01 16:12:46.481854')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.485468', '2011-02-01 16:12:46.485468')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.489938', '2011-02-01 16:12:46.489938')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.493106', '2011-02-01 16:12:46.493106')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:12:46.495920', '2011-02-01 16:12:46.495920')
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.279961', '2011-02-01 16:13:30.279961')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.291357', '2011-02-01 16:13:30.291357')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.294143', '2011-02-01 16:13:30.294143')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.297373', '2011-02-01 16:13:30.297373')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.301135', '2011-02-01 16:13:30.301135')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.304074', '2011-02-01 16:13:30.304074')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.307082', '2011-02-01 16:13:30.307082')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.309616', '2011-02-01 16:13:30.309616')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.313281', '2011-02-01 16:13:30.313281')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.316055', '2011-02-01 16:13:30.316055')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.318548', '2011-02-01 16:13:30.318548')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.321179', '2011-02-01 16:13:30.321179')[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.325530', '2011-02-01 16:13:30.325530')
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.328705', '2011-02-01 16:13:30.328705')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.384628', '2011-02-01 16:13:30.384628')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.387283', '2011-02-01 16:13:30.387283')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.389912', '2011-02-01 16:13:30.389912')
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.392985', '2011-02-01 16:13:30.392985')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.396302', '2011-02-01 16:13:30.396302')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.398927', '2011-02-01 16:13:30.398927')[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.401824', '2011-02-01 16:13:30.401824')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.406798', '2011-02-01 16:13:30.406798')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.409814', '2011-02-01 16:13:30.409814')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.414313', '2011-02-01 16:13:30.414313')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.417014', '2011-02-01 16:13:30.417014')
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.419493', '2011-02-01 16:13:30.419493')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.422266', '2011-02-01 16:13:30.422266')
+  [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.424758', '2011-02-01 16:13:30.424758')[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-01 16:13:30.428840', '2011-02-01 16:13:30.428840')
