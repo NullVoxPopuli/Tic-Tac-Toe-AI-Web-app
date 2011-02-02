@@ -68,72 +68,58 @@ class Board < ActiveRecord::Base
 
     #based off http://www.webkinesia.com/games/gametree.php
     # (converted from C++ code from the alpha - beta pruning section)
-    # returns 0 if draw
+
+    WIN = 1
     LOSS = -1
     DRAW = 0
-    WIN = 1
-    @next_move = 0
+    INFINITY = 100
+    @cur_player = COMPUTER
 
     def calculate_ai_next_move
-        best_move = 0
-        best_rank = -10
+        best_move = -1
+        best_score = -10
         
-        self.remaining_moves.each do |move|
-            self.make_move_with_index(move, COMPUTER)
-            rank = self.get_best_move(COMPUTER, WIN, LOSS)
-            self.undo_move(move)
-            
-            if rank > best_rank
-              best_move = move
-              best_rank = rank
-            end
-        end
+            @cur_player = COMPUTER
 
-        
+        self.remaining_moves.each do |move|
+          self.make_move_with_index(move, @cur_player)
+          score = -self.alphabeta(-INFINITY,INFINITY, 1 - @cur_player)
+          self.undo_move(move)
+          
+          if score > best_score
+            best_score = score
+            best_move = move
+          end
+        end
+       
         return best_move
     end
     
-    def alphabeta(depth, alpha, beta, player)
+    def alphabeta(alpha, beta, player)
+      best_score = -INFINITY
       if not self.has_available_moves?
         return DRAW
-      end
-      if player = Board::COMPUTER
+      elsif self.has_this_player_won?(player) == player
+        return WIN
+      elsif self.has_this_player_won?(1 - player) == 1 - player
+        return LOSS
+      else
         self.remaining_moves.each do |move|
+          break if alpha > beta
           
+          self.make_move_with_index(move, player)
+          move_score = -alphabeta(-beta, -alpha, 1 - player)
+          self.undo_move(move)
+          
+          if move_score > alpha
+            alpha = move_score
+            next_move = move
+          end
+          best_score = alpha
         end
       end
+      return best_score
     end
-
-    def get_best_move(player, alpha, beta)
-
-        if not self.has_available_moves?
-          return DRAW
-        elsif self.has_this_player_won?(player)
-          return WIN
-        elsif self.has_this_player_won?(1 - player)
-          return LOSS
-        else
-            best_score = alpha
-            self.remaining_moves.each do |square|
-
-                if self.state[square].nil?
-                    self.make_move_with_index(square, player)
-
-                    score = -get_best_move(1-player, -beta, -alpha) 
-                    alpha = score > alpha ? score : alpha 
-                    self.undo_move(square)
-
-                    if (beta <= alpha)
-                      break
-                    end
-                end
-            end
-        end
-        
-        return beta
-    end
-
-
 
     def has_this_player_won?(player)
       WAYS_TO_WIN.each do |way_to_win|

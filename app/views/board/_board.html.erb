@@ -1,17 +1,3 @@
-<script type="text/javascript">
-var links_disabled = false;
-
-$('a').click(function(e){
-  links_disabled = (links_disabled ? false : true);
-});
-
-$.ajax({
-  ajaxStart: function(){
-    $('a').attr('disabled', 'disabled');
-  }
-});
-</script>
-
 
 <div class="board_container" style="display: none">
   <h1 class="site_title">Tic-Tac-Toe</h1>
@@ -32,10 +18,10 @@ $.ajax({
                               :action => 'take_turn', 
                               :id => @board.id,
                               :x => col, 
-                              :y => row} , :remote => true, :onClick => "return links_disabled;") do %>
-              <div class="ttt_square"> 
+                              :y => row} , :remote => true) do %>
+              <span class="ttt_square"> 
                 &nbsp;
-              </div>
+              </span>
             <% end %>
           </span>
         <% else %>

@@ -75,14 +75,14 @@ class BoardController < ApplicationController
   
   
   def display_win(player)
-    @game_over_state_message = "Winner:"
+    @game_over_state_message = "Winner: "
     @outcome_message = (player == Board::COMPUTER ? "Computer" : "Human")
     render "game_over.js.erb", :layout => false
   end
   
   def display_tie
-    @game_over_state_message = "Tie"
-    @outcome_message = "Refresh to play again."
+    @game_over_state_message = ""
+    @outcome_message = "No Winner"
     render "game_over.js.erb", :layout => false
   end
 end
