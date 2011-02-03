@@ -31,7 +31,7 @@ class Board < ActiveRecord::Base
     end
 
     def square_is_already_taken?(x, y)
-      not self.state_of_location(x, y).nil?
+        not self.state_of_location(x, y).nil?
     end
 
     def board_state
@@ -76,18 +76,19 @@ class Board < ActiveRecord::Base
     WIN = 1
     LOSS = -1
     DRAW = 0
-    INFINITY = 100
+    INFINITY = 1000
     @cur_player = COMPUTER
 
     def calculate_ai_next_move
-        best_move = -2
+        best_move = -1
         best_score = -10
 
         @cur_player = COMPUTER
 
         self.remaining_moves.each do |move|
             self.make_move_with_index(move, @cur_player)
-            score = -self.alphabeta2(-INFINITY,INFINITY, 1 - @cur_player)
+            #score = -negamax(1 - @cur_player)
+            score = -self.alphabeta_negamax(-INFINITY,INFINITY, 1 - @cur_player)
             self.undo_move(move)
 
             if score > best_score
@@ -99,58 +100,112 @@ class Board < ActiveRecord::Base
         return best_move
     end
 
-    def alphabeta2(alpha, beta, player)
-        if not self.has_available_moves?
-        return DRAW
-        elsif self.has_this_player_won?(player) == player
-        return WIN
-        elsif self.has_this_player_won?(1 - player) == 1 - player
-        return LOSS
-        else
-            if player == COMPUTER
-                self.remaining_moves.each do |move|
-                    self.make_move_with_index(move, player)
-                    score = alphabeta2(alpha, beta, 1 - player)
-                    alpha = alpha < score ? score : alpha #max
-                    self.undo_move(move)
-                    if beta <= alpha then break end
-                end
-            return alpha
-            else
-                self.remaining_moves.each do |move|
-                    self.make_move_with_index(move, player)
-                    score = alphabeta2(alpha, beta, 1 - player)
-                    beta = beta < score ? beta : score #min
-                    self.undo_move(move)
-                    if beta <= alpha then break end
-                end
-            return beta
+    def alphabeta_negamax(alpha, beta, player)
+        winner = self.check_end_of_game
+        return WIN if winner == player
+        return LOSS if winner == 1 - player
+
+        best_score = -INFINITY
+        
+        self.remaining_moves.each do |move|
+          if alpha > beta then break end
+            
+            self.make_move_with_index(move, player)
+            move_score = -alphabeta_negamax(-alpha, -beta, 1 - player)
+            self.undo_move(move)
+            
+            if move_score > alpha
+            alpha = move_score
+            next_move = move
             end
+            best_score = alpha
+            
+            #best = value if value > best
+        end
+
+        return 0 if best_score == -INFINITY
+        return best_score
+    end
+
+    #works, though is from dpick, thus cannot use
+    def negamax(player)
+        winner = self.check_end_of_game
+        return WIN if winner == player
+        return LOSS if winner == 1 - player
+
+        best = -1000
+
+        self.remaining_moves.each do |move|
+            self.make_move_with_index(move, player)
+            value = -negamax(1 - player)
+            self.undo_move(move)
+            best = value if value > best
+        end
+
+        return 0 if best == -1000
+        return best
+    end
+
+    def alphabeta3(alpha, beta, player)
+        winner = self.check_end_of_game
+        return WIN if winner == player
+        return LOSS if winner == 1 - player
+
+        self.remaining_moves.each do |move|
+            self.make_move_with_index(move, player)
+            val = alphabeta3(-beta, -alpha, 1 - player)
+            self.undo_move(move)
+            if val >= beta
+            return val
+            end
+            if val > alpha
+            alpha = val
+            end
+        end
+        return alpha
+    end
+
+    def alphabeta2(alpha, beta, player)
+        winner = self.check_end_of_game
+        return WIN if winner == player
+        return LOSS if winner == 1 - player
+        if player == COMPUTER
+            self.remaining_moves.each do |move|
+                self.make_move_with_index(move, player)
+                score = alphabeta2(alpha, beta, 1 - player)
+                alpha = alpha < score ? score : alpha #max
+                self.undo_move(move)
+                if beta <= alpha then break end
+            end
+        return alpha
+        else
+            self.remaining_moves.each do |move|
+                self.make_move_with_index(move, player)
+                score = alphabeta2(alpha, beta, 1 - player)
+                beta = beta < score ? beta : score #min
+                self.undo_move(move)
+                if beta <= alpha then break end
+            end
+        return beta
         end
     end
 
     def alphabeta(alpha, beta, player)
-        best_score = -INFINITY
-        if not self.has_available_moves?
-        return DRAW
-        elsif self.has_this_player_won?(player) == player
-        return WIN
-        elsif self.has_this_player_won?(1 - player) == 1 - player
-        return LOSS
-        else
-            self.remaining_moves.each do |move|
-                if alpha > beta then return alpha end
+        winner = self.check_end_of_game
+        return WIN if winner == player
+        return LOSS if winner == 1 - player
+        self.remaining_moves.each do |move|
+            if alpha > beta then break end
 
-                self.make_move_with_index(move, player)
-                move_score = -alphabeta(-beta, -alpha, 1 - player)
-                self.undo_move(move)
+            self.make_move_with_index(move, player)
+            move_score = -alphabeta(-beta, -alpha, 1 - player)
+            self.undo_move(move)
 
-                if move_score > alpha
-                alpha = move_score
-                next_move = move
-                end
-                best_score = alpha
+            if move_score > alpha
+            alpha = move_score
+            next_move = move
             end
+            best_score = alpha
         end
         return best_score
     end

@@ -186,7 +186,7 @@ class BoardTest < ActiveSupport::TestCase
    # _ c h -- computer's turn
    test "make sure alpha-beta pruning works (human went first) 1" do
      @board.state = [0,1,0,nil,1,1,nil,0,1]
-     score = @board.alphabeta(0, 0, Board::COMPUTER)
+     score = @board.alphabeta(-Board::INFINITY,Board::INFINITY, Board::COMPUTER)
      assert_equal(Board::DRAW, score)
      
    end
@@ -197,7 +197,7 @@ class BoardTest < ActiveSupport::TestCase
    # h c h -- computer's turn
    test "make sure the alpha-beta pruning works (human went first) 2" do
      @board.state = [nil,nil,1,1,0,0,1,0,1]
-     score = @board.alphabeta(0,0,Board::COMPUTER)
+     score = @board.alphabeta(-Board::INFINITY,Board::INFINITY,Board::COMPUTER)
      assert_equal(Board::WIN, score)
    end
    
