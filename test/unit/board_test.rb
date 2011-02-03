@@ -180,9 +180,25 @@ class BoardTest < ActiveSupport::TestCase
    #############
    # Test A.I. #
    #############
-   test "make sure that the A.I. doesn't choose the same spot we choose" do
-     @board.state = [nil,nil,nil,nil,nil,nil,nil,nil,nil]
+   # computer is 0, human is 1
+   # c h c
+   # _ h h
+   # _ c h -- computer's turn
+   test "make sure alpha-beta pruning works (human went first) 1" do
+     @board.state = [0,1,0,nil,1,1,nil,0,1]
+     score = @board.alphabeta(0, 0, Board::COMPUTER)
+     assert_equal(Board::DRAW, score)
      
+   end
+   
+   # computer is 0, human is 1
+   # _ _ h
+   # h c c
+   # h c h -- computer's turn
+   test "make sure the alpha-beta pruning works (human went first) 2" do
+     @board.state = [nil,nil,1,1,0,0,1,0,1]
+     score = @board.alphabeta(0,0,Board::COMPUTER)
+     assert_equal(Board::WIN, score)
    end
    
    test "make sure that the A.I. doesn't return nil" do

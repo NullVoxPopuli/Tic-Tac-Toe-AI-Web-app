@@ -30,6 +30,10 @@ class Board < ActiveRecord::Base
     # end
     end
 
+    def square_is_already_taken?(x, y)
+      not self.state_of_location(x, y).nil?
+    end
+
     def board_state
         self.state
     end
@@ -76,64 +80,93 @@ class Board < ActiveRecord::Base
     @cur_player = COMPUTER
 
     def calculate_ai_next_move
-        best_move = -1
+        best_move = -2
         best_score = -10
-        
-            @cur_player = COMPUTER
+
+        @cur_player = COMPUTER
 
         self.remaining_moves.each do |move|
-          self.make_move_with_index(move, @cur_player)
-          score = -self.alphabeta(-INFINITY,INFINITY, 1 - @cur_player)
-          self.undo_move(move)
-          
-          if score > best_score
+            self.make_move_with_index(move, @cur_player)
+            score = -self.alphabeta2(-INFINITY,INFINITY, 1 - @cur_player)
+            self.undo_move(move)
+
+            if score > best_score
             best_score = score
             best_move = move
-          end
+            end
         end
-       
+
         return best_move
     end
-    
-    def alphabeta(alpha, beta, player)
-      best_score = -INFINITY
-      if not self.has_available_moves?
+
+    def alphabeta2(alpha, beta, player)
+        if not self.has_available_moves?
         return DRAW
-      elsif self.has_this_player_won?(player) == player
+        elsif self.has_this_player_won?(player) == player
         return WIN
-      elsif self.has_this_player_won?(1 - player) == 1 - player
+        elsif self.has_this_player_won?(1 - player) == 1 - player
         return LOSS
-      else
-        self.remaining_moves.each do |move|
-          break if alpha > beta
-          
-          self.make_move_with_index(move, player)
-          move_score = -alphabeta(-beta, -alpha, 1 - player)
-          self.undo_move(move)
-          
-          if move_score > alpha
-            alpha = move_score
-            next_move = move
-          end
-          best_score = alpha
+        else
+            if player == COMPUTER
+                self.remaining_moves.each do |move|
+                    self.make_move_with_index(move, player)
+                    score = alphabeta2(alpha, beta, 1 - player)
+                    alpha = alpha < score ? score : alpha #max
+                    self.undo_move(move)
+                    if beta <= alpha then break end
+                end
+            return alpha
+            else
+                self.remaining_moves.each do |move|
+                    self.make_move_with_index(move, player)
+                    score = alphabeta2(alpha, beta, 1 - player)
+                    beta = beta < score ? beta : score #min
+                    self.undo_move(move)
+                    if beta <= alpha then break end
+                end
+            return beta
+            end
         end
-      end
-      return best_score
+    end
+
+    def alphabeta(alpha, beta, player)
+        best_score = -INFINITY
+        if not self.has_available_moves?
+        return DRAW
+        elsif self.has_this_player_won?(player) == player
+        return WIN
+        elsif self.has_this_player_won?(1 - player) == 1 - player
+        return LOSS
+        else
+            self.remaining_moves.each do |move|
+                if alpha > beta then return alpha end
+
+                self.make_move_with_index(move, player)
+                move_score = -alphabeta(-beta, -alpha, 1 - player)
+                self.undo_move(move)
+
+                if move_score > alpha
+                alpha = move_score
+                next_move = move
+                end
+                best_score = alpha
+            end
+        end
+        return best_score
     end
 
     def has_this_player_won?(player)
-      WAYS_TO_WIN.each do |way_to_win|
-          return true if self.state.values_at(*way_to_win).uniq.size == 1 and self.state[way_to_win[0]] == player
-      end
-      
-      return false
+        WAYS_TO_WIN.each do |way_to_win|
+            return true if self.state.values_at(*way_to_win).uniq.size == 1 and self.state[way_to_win[0]] == player
+        end
+
+        return false
     end
 
     # returns false if the game is not over, or if there is a tie
     def check_end_of_game
-      return has_this_player_won?(COMPUTER) ? COMPUTER : (has_this_player_won?(HUMAN) ? HUMAN : false)
+        return has_this_player_won?(COMPUTER) ? COMPUTER : (has_this_player_won?(HUMAN) ? HUMAN : false)
     end
-
 
     def disp_me
         puts "Layout:"
