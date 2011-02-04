@@ -1,42 +1,51 @@
-
 <div class="board_container" style="display: none">
-  <h1 class="site_title">Tic-Tac-Toe</h1>
-  
-  <div class="overlay_container"  style="display: none;">
-    <span class="outcome"></span>
-    <span class="game_over_state"></span>
-    <div id="game_over_overlay" ></div>
-  </div>
+    <h1 class="site_title">Tic-Tac-Toe</h1>
+    <div class="overlay_container"  style="display: none;">
+        <span class="outcome"></span>
+        <span class="game_over_state"></span>
+        <div id="game_over_overlay" >
+        </div>
+    </div>
+    <div class="board">
+        <% @board_state = @board.board_state %>
+        <% @board.width.times do |row| %>
+          <% @board.width.times do |col| %>
+            <span class="square_container" id=<%= col.to_s + "x" + row.to_s %>>
 
-  <div class="board">
-    <% @board_state = @board.board_state %>
-    <% @board.width.times do |row| %>
-      <% @board.width.times do |col| %>
-        <% if @board.state_of_location(col, row) == nil %>
-          <span class="square_container" id=<%=  col.to_s + "x" + row.to_s %>>
-            <%= link_to( {:controller => 'board', 
-                              :action => 'take_turn', 
-                              :id => @board.id,
-                              :x => col, 
-                              :y => row} , :remote => true, :class => "square") do %>
-              <span class="ttt_square"> 
-                &nbsp;
-              </span>
-            <% end %>
-          </span>
-        <% else %>
-          <% if @x_ai %>
-            <% @x = @x_ai %>
-            <% @y = @y_ai %>
+              <% if @board.state_of_location(col, row) == nil %>
+                    <%= link_to( {:controller => 'board',
+                                  :action => 'take_turn',
+                                  :id => @board.id,
+                                  :x => col,
+                                  :y => row} , :remote => true, 
+                                                :class => "square") do %>
+                      <span class="ttt_square">  
+                          &nbsp;
+                      </span>
+                    <% end %>
+              <% else %>
+                <% if @x_ai %>
+                  <% @x = @x_ai %>
+                  <% @y = @y_ai %>
+                <% end %>
+                  <% @display = true %>
+                  <%= render :partial => "used_space" %>
+              <% end %>
+            </span>
           <% end %>
-          <% @display = true %>
-          <%= render :partial => "used_space" %>
+          <br>
         <% end %>
-      <% end %>
-      <br>
-    <% end %>
-  </div>
-  
+    </div>
 </div>
 
-
+<script type="text/javascript">
+   
+ 
+ $("a.square").bind("click", function(){
+   if (firstClick == true){
+     $(".outcome").html("Thinking...");
+     $(".overlay_container").fadeIn(400);
+   }
+   firstClick = false;
+ });
+</script>

@@ -83,6 +83,12 @@ class BoardTest < ActiveSupport::TestCase
       assert @board.has_this_player_won?(0)
     end      
     
+    test "if we return false for an incomplete board, where the comp went first" do
+      @board.state = [0,1,0,1,1,0,0,nil,nil]
+      assert_equal(false, @board.has_this_player_won?(0))
+      assert_equal(false, @board.has_this_player_won?(1))
+    end
+    
    ###############################
    #  Test has_available_moves?  #
    ###############################    
@@ -176,35 +182,6 @@ class BoardTest < ActiveSupport::TestCase
      assert_equal([], @board.remaining_moves)
    end
    
-   
-   #############
-   # Test A.I. #
-   #############
-   # computer is 0, human is 1
-   # c h c
-   # _ h h
-   # _ c h -- computer's turn
-   test "make sure alpha-beta pruning works (human went first) 1" do
-     @board.state = [0,1,0,nil,1,1,nil,0,1]
-     score = @board.alphabeta(-Board::INFINITY,Board::INFINITY, Board::COMPUTER)
-     assert_equal(Board::DRAW, score)
-     
-   end
-   
-   # computer is 0, human is 1
-   # _ _ h
-   # h c c
-   # h c h -- computer's turn
-   test "make sure the alpha-beta pruning works (human went first) 2" do
-     @board.state = [nil,nil,1,1,0,0,1,0,1]
-     score = @board.alphabeta(-Board::INFINITY,Board::INFINITY,Board::COMPUTER)
-     assert_equal(Board::WIN, score)
-   end
-   
-   test "make sure that the A.I. doesn't return nil" do
-     @board.state = [nil,nil,nil,nil,nil,nil,nil,nil,nil]
-     assert_not_nil(@board.calculate_ai_next_move)
-   end
       
   def teardown
 

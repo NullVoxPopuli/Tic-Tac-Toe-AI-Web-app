@@ -16,9 +16,13 @@ class BoardController < ApplicationController
 
         @x_ai = ai_move % Board::WIDTH
         @y_ai = (ai_move - @x_ai) / Board::WIDTH
-
+         
         @board.make_move(@x_ai, @y_ai, Board::COMPUTER)
-        @board.save
+        puts @board.to_s
+        puts @x_ai
+        puts @y_ai
+        puts ai_move
+        @board.save!
         end
 
         render 'start_game.js.erb', :layout => false

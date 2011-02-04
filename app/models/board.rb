@@ -6,7 +6,10 @@ class Board < ActiveRecord::Base
 
     @board_layout = []
 
-    WAYS_TO_WIN = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8],[0, 4, 8], [2, 4, 6]]
+    # 0 1 2
+    # 3 4 5
+    # 6 7 8
+    WAYS_TO_WIN = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
 
     serialize :state
 
@@ -51,7 +54,7 @@ class Board < ActiveRecord::Base
     end
 
     def has_available_moves?
-        return self.state.include? nil
+        self.state.include? nil
     end
 
     def make_move(x, y, player)
@@ -65,6 +68,10 @@ class Board < ActiveRecord::Base
     def undo_move(index)
         self.state[index] = nil
     end
+  
+    def empty?
+      self.state.count(nil) == NUM_SQUARES
+    end
 
     def remaining_moves
         self.state.each_with_index.map{|e,i| (e.nil?) ? i : nil }.compact
@@ -76,12 +83,18 @@ class Board < ActiveRecord::Base
     WIN = 1
     LOSS = -1
     DRAW = 0
-    INFINITY = 1000
+    INFINITY = 10000
     @cur_player = COMPUTER
+    BEST_FIRST_MOVES = [0, 2, 8, 6] #teh corners
 
     def calculate_ai_next_move
+        if self.empty? #this is assuming the A.I. is going first.
+          #first move doesn't matter, as long as it's a corner
+          return BEST_FIRST_MOVES[rand(3)]
+        end
+        
         best_move = -1
-        best_score = -10
+        best_score = -5
 
         @cur_player = COMPUTER
 
@@ -108,13 +121,13 @@ class Board < ActiveRecord::Base
 
         self.remaining_moves.each do |move|
             break if alpha > beta
-            
+
             self.make_move_with_index(move, player)
             move_score = -alphabeta_negamax(-beta, -alpha, 1 - player)
             self.undo_move(move)
 
             if move_score > alpha
-              alpha = move_score
+            alpha = move_score
             end
             best_score = alpha
         end
@@ -136,19 +149,15 @@ class Board < ActiveRecord::Base
         return has_this_player_won?(COMPUTER) ? COMPUTER : (has_this_player_won?(HUMAN) ? HUMAN : false)
     end
 
-    def disp_me
-        puts "Layout:"
+    def to_s
+        result = ""
         WIDTH.times do |row|
             WIDTH.times do |col|
-                print self.state[WIDTH * row + col]
+                result += self.state[WIDTH * row + col].inspect + " "
             end
-            puts " "
-        end
-        puts " "
-        puts " Solutions: "
-        puts WINNING_ROWS.inspect
-        puts WINNING_COLS.inspect
-        puts WINNING_DIAG.inspect
+            result += "\n"
+        end  
+        return result      
     end
-
+    
 end
