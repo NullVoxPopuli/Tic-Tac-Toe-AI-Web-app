@@ -53525,3 +53525,684 @@ Rendered board/_used_space.html.erb (0.4ms)
 Rendered board/_used_space.html.erb (0.5ms)
 Rendered board/game_over.js.erb (3.8ms)
 Completed 200 OK in 15ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Feb 04 19:19:10 -0500 2011
+  Processing by ApplicationController#index as HTML
+Rendered application/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/board/start_game?human_is_first=true" for 127.0.0.1 at Fri Feb 04 19:19:21 -0500 2011
+  Processing by BoardController#start_game as JS
+  Parameters: {"human_is_first"=>"true"}
+  [1m[36mAREL (37.2ms)[0m  [1mINSERT INTO "boards" ("updated_at", "turn", "created_at", "state") VALUES ('2011-02-05 00:19:21.951384', NULL, '2011-02-05 00:19:21.951384', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')[0m
+Rendered board/_board.html.erb (7.5ms)
+Rendered board/start_game.js.erb (23.4ms)
+Completed 200 OK in 299ms (Views: 102.2ms | ActiveRecord: 37.2ms)
+
+
+Started GET "/board/take_turn?id=496&x=2&y=2" for 127.0.0.1 at Fri Feb 04 19:19:24 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"2", "y"=>"2", "id"=>"496"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 496) LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 
+- 
+- 
+- 
+- 0
+- 
+- 
+- 
+- 1
+' WHERE ("boards"."id" = 496)[0m
+Rendered board/_used_space.html.erb (0.9ms)
+Rendered board/_used_space.html.erb (0.5ms)
+Rendered board/refresh_board.js.erb (35.9ms)
+Completed 200 OK in 7389ms (Views: 51.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/board/take_turn?id=496&x=0&y=0" for 127.0.0.1 at Fri Feb 04 19:19:43 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"0", "y"=>"0", "id"=>"496"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 496) LIMIT 1
+  [1m[36mAREL (20.1ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 1
+- 0
+- 
+- 
+- 0
+- 
+- 
+- 
+- 1
+' WHERE ("boards"."id" = 496)[0m
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/refresh_board.js.erb (4.3ms)
+Completed 200 OK in 226ms (Views: 7.7ms | ActiveRecord: 20.3ms)
+
+
+Started GET "/board/take_turn?id=496&x=1&y=2" for 127.0.0.1 at Fri Feb 04 19:19:47 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"1", "y"=>"2", "id"=>"496"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 496) LIMIT 1
+  [1m[36mAREL (11.1ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 1
+- 0
+- 
+- 
+- 0
+- 
+- 0
+- 1
+- 1
+' WHERE ("boards"."id" = 496)[0m
+Rendered board/_used_space.html.erb (1.0ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/refresh_board.js.erb (5.7ms)
+Completed 200 OK in 181ms (Views: 9.4ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/board/take_turn?id=496&x=2&y=0" for 127.0.0.1 at Fri Feb 04 19:19:51 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"2", "y"=>"0", "id"=>"496"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 496) LIMIT 1
+  [1m[36mAREL (517.5ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 1
+- 0
+- 1
+- 
+- 0
+- 0
+- 0
+- 1
+- 1
+' WHERE ("boards"."id" = 496)[0m
+Rendered board/_used_space.html.erb (0.5ms)
+Rendered board/_used_space.html.erb (0.5ms)
+Rendered board/refresh_board.js.erb (4.5ms)
+Completed 200 OK in 648ms (Views: 7.5ms | ActiveRecord: 517.7ms)
+
+
+Started GET "/board/take_turn?id=496&x=0&y=1" for 127.0.0.1 at Fri Feb 04 19:19:52 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"0", "y"=>"1", "id"=>"496"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 496) LIMIT 1
+Rendered board/_used_space.html.erb (0.9ms)
+Rendered board/game_over.js.erb (4.0ms)
+Completed 200 OK in 482ms (Views: 82.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Feb 04 19:20:40 -0500 2011
+  Processing by ApplicationController#index as HTML
+Rendered application/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 204ms (Views: 203.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/board/start_game" for 127.0.0.1 at Fri Feb 04 19:20:42 -0500 2011
+  Processing by BoardController#start_game as JS
+  [1m[36mAREL (237.3ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "turn", "updated_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-05 00:20:42.259300', NULL, '2011-02-05 00:20:42.259300')[0m
+  [1m[35mAREL (0.6ms)[0m  UPDATE "boards" SET "state" = '--- 
+- 
+- 
+- 0
+- 
+- 
+- 
+- 
+- 
+- 
+' WHERE ("boards"."id" = 497)
+Rendered board/_used_space.html.erb (0.6ms)
+Rendered board/_board.html.erb (8.0ms)
+Rendered board/start_game.js.erb (124.8ms)
+Completed 200 OK in 2198ms (Views: 965.2ms | ActiveRecord: 237.8ms)
+
+
+Started GET "/board/start_game" for 127.0.0.1 at Fri Feb 04 19:20:45 -0500 2011
+  Processing by BoardController#start_game as JS
+  [1m[36mAREL (302.6ms)[0m  [1mINSERT INTO "boards" ("state", "turn", "updated_at", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL, '2011-02-05 00:20:45.490973', '2011-02-05 00:20:45.490973')[0m
+  [1m[35mAREL (121.0ms)[0m  UPDATE "boards" SET "state" = '--- 
+- 0
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+' WHERE ("boards"."id" = 498)
+Rendered board/_used_space.html.erb (0.7ms)
+Rendered board/_board.html.erb (9.3ms)
+Rendered board/start_game.js.erb (12.3ms)
+Completed 200 OK in 1029ms (Views: 18.5ms | ActiveRecord: 423.6ms)
+
+
+Started GET "/board/take_turn?id=497&x=1&y=1" for 127.0.0.1 at Fri Feb 04 19:20:50 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"1", "y"=>"1", "id"=>"497"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE ("boards"."id" = 497) LIMIT 1[0m
+  [1m[35mAREL (0.6ms)[0m  UPDATE "boards" SET "state" = '--- 
+- 0
+- 
+- 0
+- 
+- 1
+- 
+- 
+- 
+- 
+' WHERE ("boards"."id" = 497)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/refresh_board.js.erb (3.8ms)
+Completed 200 OK in 872ms (Views: 6.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/board/take_turn?id=497&x=1&y=0" for 127.0.0.1 at Fri Feb 04 19:20:53 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"1", "y"=>"0", "id"=>"497"}
+  [1m[36mBoard Load (0.2ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE ("boards"."id" = 497) LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "boards" SET "state" = '--- 
+- 0
+- 1
+- 0
+- 
+- 1
+- 
+- 
+- 0
+- 
+' WHERE ("boards"."id" = 497)
+Rendered board/_used_space.html.erb (0.8ms)
+Rendered board/_used_space.html.erb (0.8ms)
+Rendered board/refresh_board.js.erb (6.3ms)
+Completed 200 OK in 315ms (Views: 11.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/board/take_turn?id=497&x=0&y=1" for 127.0.0.1 at Fri Feb 04 19:21:01 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"0", "y"=>"1", "id"=>"497"}
+  [1m[36mBoard Load (0.3ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE ("boards"."id" = 497) LIMIT 1[0m
+  [1m[35mAREL (1.5ms)[0m  UPDATE "boards" SET "state" = '--- 
+- 0
+- 1
+- 0
+- 1
+- 1
+- 0
+- 
+- 0
+- 
+' WHERE ("boards"."id" = 497)
+Rendered board/_used_space.html.erb (0.6ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/refresh_board.js.erb (4.6ms)
+Completed 200 OK in 33ms (Views: 7.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/board/take_turn?id=497&x=2&y=2" for 127.0.0.1 at Fri Feb 04 19:21:03 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"2", "y"=>"2", "id"=>"497"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE ("boards"."id" = 497) LIMIT 1[0m
+  [1m[35mAREL (2.6ms)[0m  UPDATE "boards" SET "state" = '--- 
+- 0
+- 1
+- 0
+- 1
+- 1
+- 0
+- 0
+- 0
+- 1
+' WHERE ("boards"."id" = 497)
+Rendered board/_used_space.html.erb (0.7ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/refresh_board.js.erb (4.7ms)
+Completed 200 OK in 31ms (Views: 7.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Feb 04 19:21:10 -0500 2011
+  Processing by ApplicationController#index as HTML
+Rendered application/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/board/start_game?human_is_first=true" for 127.0.0.1 at Fri Feb 04 19:21:12 -0500 2011
+  Processing by BoardController#start_game as JS
+  Parameters: {"human_is_first"=>"true"}
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-05 00:21:12.583121', '2011-02-05 00:21:12.583121', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+Rendered board/_board.html.erb (6.4ms)
+Rendered board/start_game.js.erb (9.3ms)
+Completed 200 OK in 29ms (Views: 13.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/board/take_turn?id=499&x=0&y=0" for 127.0.0.1 at Fri Feb 04 19:21:15 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"0", "y"=>"0", "id"=>"499"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 499) LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 1
+- 
+- 
+- 
+- 0
+- 
+- 
+- 
+- 
+' WHERE ("boards"."id" = 499)[0m
+Rendered board/_used_space.html.erb (0.6ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/refresh_board.js.erb (4.8ms)
+Completed 200 OK in 7480ms (Views: 8.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/board/take_turn?id=499&x=2&y=2" for 127.0.0.1 at Fri Feb 04 19:21:31 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"2", "y"=>"2", "id"=>"499"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 499) LIMIT 1
+  [1m[36mAREL (15.2ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 1
+- 0
+- 
+- 
+- 0
+- 
+- 
+- 
+- 1
+' WHERE ("boards"."id" = 499)[0m
+Rendered board/_used_space.html.erb (0.5ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/refresh_board.js.erb (3.9ms)
+Completed 200 OK in 178ms (Views: 7.0ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/board/take_turn?id=499&x=1&y=2" for 127.0.0.1 at Fri Feb 04 19:21:36 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"1", "y"=>"2", "id"=>"499"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 499) LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 1
+- 0
+- 
+- 
+- 0
+- 
+- 0
+- 1
+- 1
+' WHERE ("boards"."id" = 499)[0m
+Rendered board/_used_space.html.erb (0.5ms)
+Rendered board/_used_space.html.erb (0.5ms)
+Rendered board/refresh_board.js.erb (4.9ms)
+Completed 200 OK in 37ms (Views: 8.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/board/take_turn?id=499&x=2&y=0" for 127.0.0.1 at Fri Feb 04 19:21:37 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"2", "y"=>"0", "id"=>"499"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 499) LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 1
+- 0
+- 1
+- 
+- 0
+- 0
+- 0
+- 1
+- 1
+' WHERE ("boards"."id" = 499)[0m
+Rendered board/_used_space.html.erb (0.5ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/refresh_board.js.erb (4.1ms)
+Completed 200 OK in 27ms (Views: 7.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/board/take_turn?id=499&x=0&y=1" for 127.0.0.1 at Fri Feb 04 19:21:38 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"0", "y"=>"1", "id"=>"499"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 499) LIMIT 1
+Rendered board/_used_space.html.erb (0.5ms)
+Rendered board/game_over.js.erb (3.3ms)
+Completed 200 OK in 28ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Feb 04 19:21:58 -0500 2011
+  Processing by ApplicationController#index as HTML
+Rendered application/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/board/start_game?human_is_first=true" for 127.0.0.1 at Fri Feb 04 19:21:59 -0500 2011
+  Processing by BoardController#start_game as JS
+  Parameters: {"human_is_first"=>"true"}
+  [1m[36mAREL (0.5ms)[0m  [1mINSERT INTO "boards" ("state", "created_at", "turn", "updated_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-05 00:21:59.958151', NULL, '2011-02-05 00:21:59.958151')[0m
+Rendered board/_board.html.erb (6.3ms)
+Rendered board/start_game.js.erb (8.6ms)
+Completed 200 OK in 53ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/board/take_turn?id=500&x=0&y=0" for 127.0.0.1 at Fri Feb 04 19:22:03 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"0", "y"=>"0", "id"=>"500"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 500) LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 1
+- 
+- 
+- 
+- 0
+- 
+- 
+- 
+- 
+' WHERE ("boards"."id" = 500)[0m
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/refresh_board.js.erb (3.9ms)
+Completed 200 OK in 6207ms (Views: 6.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/board/take_turn?id=500&x=0&y=1" for 127.0.0.1 at Fri Feb 04 19:22:15 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"0", "y"=>"1", "id"=>"500"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 500) LIMIT 1
+  [1m[36mAREL (29.5ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 1
+- 
+- 
+- 1
+- 0
+- 
+- 0
+- 
+- 
+' WHERE ("boards"."id" = 500)[0m
+Rendered board/_used_space.html.erb (0.6ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/refresh_board.js.erb (4.3ms)
+Completed 200 OK in 323ms (Views: 7.9ms | ActiveRecord: 29.6ms)
+
+
+Started GET "/board/take_turn?id=500&x=2&y=1" for 127.0.0.1 at Fri Feb 04 19:22:17 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"2", "y"=>"1", "id"=>"500"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 500) LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 1
+- 0
+- 
+- 1
+- 0
+- 1
+- 0
+- 
+- 
+' WHERE ("boards"."id" = 500)[0m
+Rendered board/_used_space.html.erb (0.9ms)
+Rendered board/_used_space.html.erb (0.8ms)
+Rendered board/refresh_board.js.erb (8.0ms)
+Completed 200 OK in 62ms (Views: 11.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/board/take_turn?id=500&x=2&y=2" for 127.0.0.1 at Fri Feb 04 19:22:23 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"2", "y"=>"2", "id"=>"500"}
+  [1m[35mBoard Load (0.3ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 500) LIMIT 1
+Rendered board/_used_space.html.erb (0.9ms)
+Rendered board/_used_space.html.erb (0.6ms)
+Rendered board/game_over.js.erb (5.9ms)
+Completed 200 OK in 46ms (Views: 36.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Feb 04 19:24:36 -0500 2011
+  Processing by ApplicationController#index as HTML
+Rendered application/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/board/start_game" for 127.0.0.1 at Fri Feb 04 19:24:38 -0500 2011
+
+SyntaxError (/Users/lprestonsegoiii/Documents/Aptana Studio 3 Workspace/tic-tac-toe-ai/app/controllers/board_controller.rb:74: syntax error, unexpected kELSIF, expecting kEND
+            elsif @board.has_available_moves?
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (93.6ms)
+
+
+Started GET "/board/start_game" for 127.0.0.1 at Fri Feb 04 19:24:40 -0500 2011
+
+SyntaxError (/Users/lprestonsegoiii/Documents/Aptana Studio 3 Workspace/tic-tac-toe-ai/app/controllers/board_controller.rb:74: syntax error, unexpected kELSIF, expecting kEND
+            elsif @board.has_available_moves?
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/board/start_game" for 127.0.0.1 at Fri Feb 04 19:24:41 -0500 2011
+
+SyntaxError (/Users/lprestonsegoiii/Documents/Aptana Studio 3 Workspace/tic-tac-toe-ai/app/controllers/board_controller.rb:74: syntax error, unexpected kELSIF, expecting kEND
+            elsif @board.has_available_moves?
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Feb 04 19:25:04 -0500 2011
+  Processing by ApplicationController#index as HTML
+Rendered application/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/board/start_game" for 127.0.0.1 at Fri Feb 04 19:25:06 -0500 2011
+  Processing by BoardController#start_game as JS
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "boards" ("state", "updated_at", "turn", "created_at") VALUES ('--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-05 00:25:06.185918', NULL, '2011-02-05 00:25:06.185918')[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE "boards" SET "state" = '--- 
+- 0
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+' WHERE ("boards"."id" = 501)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/_board.html.erb (6.4ms)
+Rendered board/start_game.js.erb (8.7ms)
+Completed 200 OK in 87ms (Views: 11.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/board/take_turn?id=501&x=1&y=1" for 127.0.0.1 at Fri Feb 04 19:25:11 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"1", "y"=>"1", "id"=>"501"}
+  [1m[36mBoard Load (0.2ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE ("boards"."id" = 501) LIMIT 1[0m
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/game_over.js.erb (3.8ms)
+Completed 200 OK in 455ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Feb 04 19:25:18 -0500 2011
+  Processing by ApplicationController#index as HTML
+Rendered application/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/board/start_game" for 127.0.0.1 at Fri Feb 04 19:25:21 -0500 2011
+  Processing by BoardController#start_game as JS
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "boards" ("turn", "state", "updated_at", "created_at") VALUES (NULL, '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', '2011-02-05 00:25:21.123294', '2011-02-05 00:25:21.123294')
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 
+- 
+- 0
+- 
+- 
+- 
+- 
+- 
+- 
+' WHERE ("boards"."id" = 502)[0m
+Rendered board/_used_space.html.erb (0.5ms)
+Rendered board/_board.html.erb (70.1ms)
+Rendered board/start_game.js.erb (72.5ms)
+Completed 200 OK in 112ms (Views: 75.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/board/take_turn?id=502&x=1&y=1" for 127.0.0.1 at Fri Feb 04 19:25:22 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"1", "y"=>"1", "id"=>"502"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 502) LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 0
+- 
+- 0
+- 
+- 1
+- 
+- 
+- 
+- 
+' WHERE ("boards"."id" = 502)[0m
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/_used_space.html.erb (0.6ms)
+Rendered board/refresh_board.js.erb (4.3ms)
+Completed 200 OK in 530ms (Views: 6.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/board/take_turn?id=502&x=1&y=0" for 127.0.0.1 at Fri Feb 04 19:25:24 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"1", "y"=>"0", "id"=>"502"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 502) LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 0
+- 1
+- 0
+- 
+- 1
+- 
+- 
+- 0
+- 
+' WHERE ("boards"."id" = 502)[0m
+Rendered board/_used_space.html.erb (0.5ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/refresh_board.js.erb (4.2ms)
+Completed 200 OK in 187ms (Views: 6.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/board/take_turn?id=502&x=0&y=1" for 127.0.0.1 at Fri Feb 04 19:25:25 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"0", "y"=>"1", "id"=>"502"}
+  [1m[35mBoard Load (0.1ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 502) LIMIT 1
+  [1m[36mAREL (0.5ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 0
+- 1
+- 0
+- 1
+- 1
+- 0
+- 
+- 0
+- 
+' WHERE ("boards"."id" = 502)[0m
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/refresh_board.js.erb (4.1ms)
+Completed 200 OK in 65ms (Views: 6.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/board/take_turn?id=502&x=2&y=2" for 127.0.0.1 at Fri Feb 04 19:25:27 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"2", "y"=>"2", "id"=>"502"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 502) LIMIT 1
+Rendered board/_used_space.html.erb (0.6ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/game_over.js.erb (4.2ms)
+Completed 200 OK in 16ms (Views: 7.2ms | ActiveRecord: 0.2ms)

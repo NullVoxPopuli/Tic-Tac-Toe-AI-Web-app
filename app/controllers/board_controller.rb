@@ -69,11 +69,14 @@ class BoardController < ApplicationController
                 end
 
             else
-            # do something with the game ending
                 display_win(Board::HUMAN)
-            return
+              return
             end
-
+            
+            if not @board.has_available_moves?
+                display_tie
+                return
+            end
             @board.save
             render 'refresh_board.js.erb', :layout => false
 

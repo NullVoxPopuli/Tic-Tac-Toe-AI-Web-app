@@ -83,7 +83,7 @@ class Board < ActiveRecord::Base
     WIN = 1
     LOSS = -1
     DRAW = 0
-    INFINITY = 10000
+    INFINITY = 1000
     @cur_player = COMPUTER
     BEST_FIRST_MOVES = [0, 2, 8, 6] #teh corners
 
@@ -94,7 +94,7 @@ class Board < ActiveRecord::Base
         end
         
         best_move = -1
-        best_score = -5
+        best_score = -10
 
         @cur_player = COMPUTER
 
