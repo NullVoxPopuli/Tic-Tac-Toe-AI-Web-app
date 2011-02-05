@@ -3,6 +3,13 @@
     <div class="overlay_container"  style="display: none;">
         <span class="outcome"></span>
         <span class="game_over_state"></span>
+        <div class="reset_game" style="display: none;">
+          <% link_to (:controller => 'application', :action => 'index') do %>
+            <span class="reset_text">
+              Try Again
+            </span>
+          <% end %>
+        </div>
         <div id="game_over_overlay" >
         </div>
     </div>
@@ -44,7 +51,7 @@
  $("a.square").bind("click", function(){
    if (firstClick == true){
      $(".outcome").html("Thinking...");
-     $(".overlay_container").fadeIn(400);
+     $(".overlay_container").fadeIn(500);
    }
    firstClick = false;
  });

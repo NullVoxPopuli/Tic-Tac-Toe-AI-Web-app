@@ -1,4 +1,4 @@
-$('.welcome_container').fadeOut(500, function(){
+$('.welcome_container').fadeOut(300, function(){
   $( '.shell' ).html( "<%= escape_javascript( render( :partial => "board/board" ) ) %>" );
-  $('.board_container').fadeIn(500);
+  $('.board_container').fadeIn(300);
 });
