@@ -55162,3 +55162,160 @@ Rendered board/_used_space.html.erb (0.4ms)
 Rendered board/_used_space.html.erb (0.4ms)
 Rendered board/game_over.js.erb (3.6ms)
 Completed 200 OK in 17ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 13:09:26 -0500 2011
+  Processing by ApplicationController#index as HTML
+Rendered application/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/board/start_game" for 127.0.0.1 at Sat Feb 05 13:09:28 -0500 2011
+  Processing by BoardController#start_game as JS
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "boards" ("updated_at", "turn", "created_at", "state") VALUES ('2011-02-05 18:09:28.387860', NULL, '2011-02-05 18:09:28.387860', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+')
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 0
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+' WHERE ("boards"."id" = 515)[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_board__board_html_erb___877829017_2191438260_1480830 at /Users/lprestonsegoiii/Documents/Aptana Studio 3 Workspace/tic-tac-toe-ai/app/views/board/_board.html.erb:7)
+Rendered board/_used_space.html.erb (0.6ms)
+Rendered board/_board.html.erb (7.5ms)
+Rendered board/start_game.js.erb (10.2ms)
+Completed 200 OK in 76ms (Views: 14.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/board/take_turn?id=515&x=1&y=1" for 127.0.0.1 at Sat Feb 05 13:09:29 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"1", "y"=>"1", "id"=>"515"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 515) LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mUPDATE "boards" SET "state" = '--- 
+- 0
+- 0
+- 
+- 
+- 1
+- 
+- 
+- 
+- 
+' WHERE ("boards"."id" = 515)[0m
+Rendered board/_used_space.html.erb (0.6ms)
+Rendered board/_used_space.html.erb (0.5ms)
+Rendered board/refresh_board.js.erb (4.9ms)
+Completed 200 OK in 397ms (Views: 8.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/board/take_turn?id=515&x=1&y=2" for 127.0.0.1 at Sat Feb 05 13:09:30 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"1", "y"=>"2", "id"=>"515"}
+  [1m[35mBoard Load (0.2ms)[0m  SELECT "boards".* FROM "boards" WHERE ("boards"."id" = 515) LIMIT 1
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/game_over.js.erb (3.5ms)
+Completed 200 OK in 26ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Feb 05 13:10:21 -0500 2011
+  Processing by ApplicationController#index as HTML
+Rendered application/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/board/start_game" for 127.0.0.1 at Sat Feb 05 13:10:23 -0500 2011
+  Processing by BoardController#start_game as JS
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "boards" ("updated_at", "created_at", "state", "turn") VALUES ('2011-02-05 18:10:23.287025', '2011-02-05 18:10:23.287025', '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+', NULL)[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE "boards" SET "state" = '--- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 0
+' WHERE ("boards"."id" = 516)
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_board__board_html_erb___877829017_2190422240_1480830 at /Users/lprestonsegoiii/Documents/Aptana Studio 3 Workspace/tic-tac-toe-ai/app/views/board/_board.html.erb:7)
+Rendered board/_used_space.html.erb (0.6ms)
+Rendered board/_board.html.erb (57.1ms)
+Rendered board/start_game.js.erb (60.2ms)
+Completed 200 OK in 137ms (Views: 62.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/board/take_turn?id=516&x=1&y=1" for 127.0.0.1 at Sat Feb 05 13:10:24 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"1", "y"=>"1", "id"=>"516"}
+  [1m[36mBoard Load (0.1ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE ("boards"."id" = 516) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE "boards" SET "state" = '--- 
+- 0
+- 
+- 
+- 
+- 1
+- 
+- 
+- 
+- 0
+' WHERE ("boards"."id" = 516)
+Rendered board/_used_space.html.erb (0.6ms)
+Rendered board/_used_space.html.erb (0.8ms)
+Rendered board/refresh_board.js.erb (62.0ms)
+Completed 200 OK in 651ms (Views: 65.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/board/take_turn?id=516&x=0&y=2" for 127.0.0.1 at Sat Feb 05 13:10:28 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"0", "y"=>"2", "id"=>"516"}
+  [1m[36mBoard Load (0.2ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE ("boards"."id" = 516) LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE "boards" SET "state" = '--- 
+- 0
+- 
+- 0
+- 
+- 1
+- 
+- 1
+- 
+- 0
+' WHERE ("boards"."id" = 516)
+Rendered board/_used_space.html.erb (0.5ms)
+Rendered board/_used_space.html.erb (0.5ms)
+Rendered board/refresh_board.js.erb (4.6ms)
+Completed 200 OK in 133ms (Views: 8.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/board/take_turn?id=516&x=2&y=1" for 127.0.0.1 at Sat Feb 05 13:10:31 -0500 2011
+  Processing by BoardController#take_turn as JS
+  Parameters: {"x"=>"2", "y"=>"1", "id"=>"516"}
+  [1m[36mBoard Load (0.2ms)[0m  [1mSELECT "boards".* FROM "boards" WHERE ("boards"."id" = 516) LIMIT 1[0m
+Rendered board/_used_space.html.erb (0.4ms)
+Rendered board/_used_space.html.erb (0.5ms)
+Rendered board/game_over.js.erb (3.8ms)
+Completed 200 OK in 16ms (Views: 6.2ms | ActiveRecord: 0.2ms)
