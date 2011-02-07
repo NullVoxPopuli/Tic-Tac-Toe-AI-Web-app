@@ -76,6 +76,14 @@ class Board < ActiveRecord::Base
     def remaining_moves
         self.state.each_with_index.map{|e,i| (e.nil?) ? i : nil }.compact
     end
+    
+    def first_move?
+      if self.state.count(nil) == NUM_SQUARES - 1
+        puts "FIST MOVE" + self.state.index(HUMAN).to_s
+        return self.state.index(HUMAN)
+      end
+      return false
+    end
 
     #based off http://www.webkinesia.com/games/gametree.php
     # (converted from C++ code from the alpha - beta pruning section)
@@ -86,11 +94,17 @@ class Board < ActiveRecord::Base
     INFINITY = 1000
     @cur_player = COMPUTER
     BEST_FIRST_MOVES = [0, 2, 8, 6] #teh corners
+    BEST_SECOND_MOVE = 4 # middle
 
     def calculate_ai_next_move
+        first_move = self.first_move?
         if self.empty? #this is assuming the A.I. is going first.
           #first move doesn't matter, as long as it's a corner
           return BEST_FIRST_MOVES[rand(3)]
+        elsif  first_move == BEST_SECOND_MOVE
+          return BEST_FIRST_MOVES[rand(3)]
+        elsif first_move != false
+          return BEST_SECOND_MOVE
         end
         
         best_move = -1

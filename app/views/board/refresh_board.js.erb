@@ -1,5 +1,3 @@
-hideInitialOverlay();
-
 $( "#<%= escape_javascript(@x.to_s + "x" + @y.to_s) %>" ).html( "<%= escape_javascript( render( :partial => "used_space" ) ) %>" );
 $("#<%= escape_javascript(@x.to_s + "x" + @y.to_s) %>_square").fadeIn(300);
 
